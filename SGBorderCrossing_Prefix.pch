@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'SGBorderCrossing' target in the 'SGBorderCrossing' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif
