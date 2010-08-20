@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html>
+<head>
+<title>SGCommitLogReplayDelegate</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta name="generator" content="HeaderDoc">
+<meta name="xcode-display" content="render">
+<style><!--
+#tocMenu {
+		display: block;
+		position:fixed;
+		top:0px;
+		left:0px;
+		width:210px;
+		height:100%;
+		background:transparent;
+}
+#bodyText {
+		margin-left: 210px;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+function hidetoc() {
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var toc = document.getElementById('tocMenu');
+		var body = document.getElementById('bodyText');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+--></script><style type="text/css"><!--.keyword {background:#ffffff; color:#761550;}.template {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.function {background:#ffffff; color:#000000;}.string {background: #ffffff; color:#891315;}.preprocessor {background:#ffffff; color:#236e25}.comment {background:#ffffff; color:#236e25}.char {background: #ffffff; color:#0000ff;}.var {background:#ffffff; color:#000000;}.type {background:#ffffff; color:#761550;}.param {background:#ffffff; color:#000000;}a:link {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:active {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}h4 {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: tiny; font-weight: bold;}body {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: 10pt;}.list_indent { margin-left: 40px; }.declaration_indent { margin-left: 40px; }.param_indent { margin-left: 40px; }.group_indent { margin-left: 40px; }.group_desc_indent { margin-left: 20px; }.warning_indent { margin-left: 40px; }.important_indent { margin-left: 40px; }.hd_tocAccess { font-style: italic; font-size: 10px; font-weight: normal; color: #303030; }--></style>
+</head>
+<body bgcolor="#ffffff" onload="hidetoc();">
+
+<!-- headerDoc=intf; uid=//simplegeo/occ/intf/SGCommitLogReplayDelegate;  name=SGCommitLogReplayDelegate-->
+<a name="//simplegeo/occ/intf/SGCommitLogReplayDelegate"></a><div id="tocMenu">
+<iframe id="toc_content" name="toc_content" src="toc.html" width="210" height="100%" align="left" frameborder="0">This document set is best viewed in a browser that supports iFrames.</iframe>
+</div>
+<div id="bodyText">
+<!-- start of header -->
+
+<!-- end of header -->
+<a name="top"></a>
+<hr>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h1><a name="SGCommitLogReplayDelegate">SGCommitLogReplayDelegate</a></h1>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>Deals with replay notifications that are sent out fomr <a href="../../../../Documentation/SGCommitLog_h/Classes/SGCommitLog/index.html#//simplegeo/occ/cl/SGCommitLog" logicalPath="//simplegeo/occ/cl/SGCommitLog">SGCommitLog</a>.
+<!-- end abstract --></p>
+<p><b>Declared In:</b> <a href="../../index.html" target="_top">SGCommitLog.h</a><br></p>
+<div class="declaration_indent">
+</div>
+<p></p>
+<hr>
+<br><a name="HeaderDoc_methods"></a>
+<h2>Methods</h2>
+<dl>
+<dt><tt><a href="index.html#//simplegeo/occ/intfm/SGCommitLogReplayDelegate/commitLog:replay:username:key:" target="_top">-commitLog:replay:username:key:</a></tt></dt>
+<dd><p>&#65532;When <!-- a logicalPath="replay" -->replay<!-- /a -->  is called, this delegate is notified
+with every commit that is currenlty being replayed. All commits (including errors) are
+used.
+</p></dd>
+</dl>
+<hr>
+<!-- headerDoc=intfm;  uid=//simplegeo/occ/intfm/SGCommitLogReplayDelegate/commitLog:replay:username:key:;   name=SGCommitLogReplayDelegate::commitLog:replay:username:key: --><a name="//simplegeo/occ/intfm/SGCommitLogReplayDelegate/commitLog:replay:username:key:"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="commitLog:replay:username:key:">commitLog:replay:username:key:</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>&#65532;When <!-- a logicalPath="replay" -->replay<!-- /a --> is called, this delegate is notified
+with every commit that is currenlty being replayed. All commits (including errors) are
+used.
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/void //simplegeo/occ/tdef/void //simplegeo/occ/tag/void //simplegeo/occ/econst/void //simplegeo/occ/struct/void //simplegeo/occ/clconst/void //simplegeo/occ/intf/void" --><span class="type">void</span><!-- /a -->) <!-- a logicalPath="//simplegeo/occ/instm/commitLog //simplegeo/occ/clm/commitLog //simplegeo/occ/intfcm/commitLog //simplegeo/occ/intfm/commitLog //simplegeo/occ/func/commitLog //simplegeo/occ/ftmplt/commitLog //simplegeo/occ/defn/commitLog //simplegeo/occ/macro/commitLog" --><span class="function">commitLog</span><!-- /a -->:(<a href="../../../../Documentation/SGCommitLog_h/Classes/SGCommitLog/index.html#//simplegeo/occ/cl/SGCommitLog" logicalPath="//simplegeo/occ/cl/SGCommitLog"><span class="type">SGCommitLog</span></a><span class="type">*</span>)<span class="param">commitLog</span> <!-- a logicalPath="//simplegeo/occ/instm/replay //simplegeo/occ/clm/replay //simplegeo/occ/intfcm/replay //simplegeo/occ/intfm/replay //simplegeo/occ/func/replay //simplegeo/occ/ftmplt/replay //simplegeo/occ/defn/replay //simplegeo/occ/macro/replay" --><span class="function">replay</span><!-- /a -->:(<!-- a logicalPath="//simplegeo/occ/cl/NSData //simplegeo/occ/tdef/NSData //simplegeo/occ/tag/NSData //simplegeo/occ/econst/NSData //simplegeo/occ/struct/NSData //simplegeo/occ/clconst/NSData //simplegeo/occ/intf/NSData" --><span class="type">NSData</span><!-- /a --><span class="type">*</span>)<span class="param">data</span> 
+        <!-- a logicalPath="//simplegeo/occ/instm/username //simplegeo/occ/clm/username //simplegeo/occ/intfcm/username //simplegeo/occ/intfm/username //simplegeo/occ/func/username //simplegeo/occ/ftmplt/username //simplegeo/occ/defn/username //simplegeo/occ/macro/username" --><span class="function">username</span><!-- /a -->:(<!-- a logicalPath="//simplegeo/occ/cl/NSString //simplegeo/occ/tdef/NSString //simplegeo/occ/tag/NSString //simplegeo/occ/econst/NSString //simplegeo/occ/struct/NSString //simplegeo/occ/clconst/NSString //simplegeo/occ/intf/NSString" --><span class="type">NSString</span><!-- /a --><span class="type">*</span>)<span class="param">username</span> <!-- a logicalPath="//simplegeo/occ/instm/key //simplegeo/occ/clm/key //simplegeo/occ/intfcm/key //simplegeo/occ/intfm/key //simplegeo/occ/func/key //simplegeo/occ/ftmplt/key //simplegeo/occ/defn/key //simplegeo/occ/macro/key" --><span class="function">key</span><!-- /a -->:(<!-- a logicalPath="//simplegeo/occ/cl/NSString //simplegeo/occ/tdef/NSString //simplegeo/occ/tag/NSString //simplegeo/occ/econst/NSString //simplegeo/occ/struct/NSString //simplegeo/occ/clconst/NSString //simplegeo/occ/intf/NSString" --><span class="type">NSString</span><!-- /a --><span class="type">*</span>)<!-- a logicalPath="//simplegeo/occ/econst/key //simplegeo/occ/data/key" --><span class="var">key</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt><code>commitLog</code></dt>
+<dd><p>&#65532;The <a href="../../../../Documentation/SGCommitLog_h/Classes/SGCommitLog/index.html#//simplegeo/occ/cl/SGCommitLog" logicalPath="//simplegeo/occ/cl/SGCommitLog">SGCommitLog</a>  that is in replay mode.</p></dd>
+<dt><code>data</code></dt>
+<dd><p>&#65532;The data contained by the commit.</p></dd>
+<dt><code>username</code></dt>
+<dd><p>&#65532;The name of the user.</p></dd>
+<dt><code>key</code></dt>
+<dd><p>&#65532;The key.s</p></dd>
+</dl>
+</div>
+<p></p>
+<p><!-- start of footer -->
+
+<!-- end of footer -->
+</p>
+<p>&copy; SimpleGeo Last Updated: 08/20/2010
+</p>
+</div>
+</body>
+</html>

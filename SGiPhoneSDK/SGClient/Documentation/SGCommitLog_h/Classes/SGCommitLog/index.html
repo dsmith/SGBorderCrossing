@@ -1,0 +1,536 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html>
+<head>
+<title>SGCommitLog</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta name="generator" content="HeaderDoc">
+<meta name="xcode-display" content="render">
+<style><!--
+#tocMenu {
+		display: block;
+		position:fixed;
+		top:0px;
+		left:0px;
+		width:210px;
+		height:100%;
+		background:transparent;
+}
+#bodyText {
+		margin-left: 210px;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+function hidetoc() {
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var toc = document.getElementById('tocMenu');
+		var body = document.getElementById('bodyText');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+--></script><style type="text/css"><!--.keyword {background:#ffffff; color:#761550;}.template {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.function {background:#ffffff; color:#000000;}.string {background: #ffffff; color:#891315;}.preprocessor {background:#ffffff; color:#236e25}.comment {background:#ffffff; color:#236e25}.char {background: #ffffff; color:#0000ff;}.var {background:#ffffff; color:#000000;}.type {background:#ffffff; color:#761550;}.param {background:#ffffff; color:#000000;}a:link {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:active {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}h4 {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: tiny; font-weight: bold;}body {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: 10pt;}.list_indent { margin-left: 40px; }.declaration_indent { margin-left: 40px; }.param_indent { margin-left: 40px; }.group_indent { margin-left: 40px; }.group_desc_indent { margin-left: 20px; }.warning_indent { margin-left: 40px; }.important_indent { margin-left: 40px; }.hd_tocAccess { font-style: italic; font-size: 10px; font-weight: normal; color: #303030; }--></style>
+</head>
+<body bgcolor="#ffffff" onload="hidetoc();">
+
+<!-- headerDoc=cl; uid=//simplegeo/occ/cl/SGCommitLog;  name=SGCommitLog-->
+<a name="//simplegeo/occ/cl/SGCommitLog"></a><div id="tocMenu">
+<iframe id="toc_content" name="toc_content" src="toc.html" width="210" height="100%" align="left" frameborder="0">This document set is best viewed in a browser that supports iFrames.</iframe>
+</div>
+<div id="bodyText">
+<!-- start of header -->
+
+<!-- end of header -->
+<a name="top"></a>
+<hr>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h1><a name="SGCommitLog">SGCommitLog</a></h1>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>A small implementation of a commit log
+that contains replay functionality.
+<!-- end abstract --></p>
+<p><b>Superclass:</b> <!-- a logicalPath="//simplegeo/occ/cl/NSObject" -->NSObject<!-- /a --><br><b>Declared In:</b> <a href="../../index.html" target="_top">SGCommitLog.h</a><br></p>
+<div class="declaration_indent">
+</div>
+<h5 class="tight">
+<font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5>
+<!-- begin discussion --><p>The directory format is stored as:
+</p>
+<p>#{commit_log_name}/#{username}/#{key}/#{commit}-#{current_timestamp}
+</p>
+<p>Each commit is stored within the key of a username. Commits are stored in a 
+file called commit that has a timestamp appended to it.
+<!-- end discussion -->
+</p>
+<p></p>
+<hr>
+<br><a name="HeaderDoc_methods"></a>
+<h2>Methods</h2>
+<dl>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/SGCommitLog/addCommit:forUsername:andKey:" target="_top">-addCommit:forUsername:andKey:</a></tt></dt>
+<dd><p>&#65532;Adds a commit for a user and a specified key.
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/SGCommitLog/addError:forUsername:andKey:" target="_top">-addError:forUsername:andKey:</a></tt></dt>
+<dd><p>&#65532;Adds an error for a user and a specified key.
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/SGCommitLog/clear" target="_top">-clear</a></tt></dt>
+<dd><p>Deletes all commits that are loaded into memory.
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/SGCommitLog/deleteAllUsernames" target="_top">-deleteAllUsernames</a></tt></dt>
+<dd><p>Deletes all of the user directories for this
+commit log.
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/SGCommitLog/deleteUsername:" target="_top">-deleteUsername:</a></tt></dt>
+<dd><p>Deletes all commits for a given user.
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/SGCommitLog/deleteUsername:key:" target="_top">-deleteUsername:key:</a></tt></dt>
+<dd><p>Deletes all commits for a given user and key.
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/SGCommitLog/flush" target="_top">-flush</a></tt></dt>
+<dd><p>&#65532;Saves all commits onto disk.
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/SGCommitLog/getAllCommitsForUsername:" target="_top">-getAllCommitsForUsername:</a></tt></dt>
+<dd><p>&#65532;Retrieves all commits for a given user that are loaded into
+memory.
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/SGCommitLog/getCommitCountForUsername:key:" target="_top">-getCommitCountForUsername:key:</a></tt></dt>
+<dd><p>Retreives the amount of commits a user has for a key that
+are currently loaded into memory.
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/SGCommitLog/getCommitsForUsername:key:" target="_top">-getCommitsForUsername:key:</a></tt></dt>
+<dd><p>&#65532;Retrieves all commits for a given user and key that are loaded
+into memory.
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/SGCommitLog/getErrorCountForUsername:key:" target="_top">-getErrorCountForUsername:key:</a></tt></dt>
+<dd><p>&#65532;Retreives the amount of errors a user has for a key that
+are currently loaded into memory.
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/SGCommitLog/initWithName:" target="_top">-initWithName:</a></tt></dt>
+<dd><p>&#65532;Initializes a new commit log that will write
+all commits in a directory called name
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/SGCommitLog/reload" target="_top">-reload</a></tt></dt>
+<dd><p>&#65532;Reloads all commits from disk into memory.
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/SGCommitLog/replay:" target="_top">-replay:</a></tt></dt>
+<dd><p>&#65532;Replays all of the commits made by a user.
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/SGCommitLog/startFlushTimer" target="_top">-startFlushTimer</a></tt></dt>
+<dd><p>&#65532;Starts the flush timer which will write all commits in memory
+to a file.
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/SGCommitLog/stopFlushTimer" target="_top">-stopFlushTimer</a></tt></dt>
+<dd><p>Stops the flush timer that is in charge of writing commits to
+a file.
+</p></dd>
+</dl>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/SGCommitLog/addCommit:forUsername:andKey:;   name=SGCommitLog::addCommit:forUsername:andKey: --><a name="//simplegeo/occ/instm/SGCommitLog/addCommit:forUsername:andKey:"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="addCommit:forUsername:andKey:">addCommit:forUsername:andKey:</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>&#65532;Adds a commit for a user and a specified key.
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/void //simplegeo/occ/tdef/void //simplegeo/occ/tag/void //simplegeo/occ/econst/void //simplegeo/occ/struct/void //simplegeo/occ/clconst/void //simplegeo/occ/intf/void" --><span class="type">void</span><!-- /a -->) <!-- a logicalPath="//simplegeo/occ/instm/addCommit //simplegeo/occ/clm/addCommit //simplegeo/occ/intfcm/addCommit //simplegeo/occ/intfm/addCommit //simplegeo/occ/func/addCommit //simplegeo/occ/ftmplt/addCommit //simplegeo/occ/defn/addCommit //simplegeo/occ/macro/addCommit" --><span class="function">addCommit</span><!-- /a -->:(<!-- a logicalPath="//simplegeo/occ/cl/NSData //simplegeo/occ/tdef/NSData //simplegeo/occ/tag/NSData //simplegeo/occ/econst/NSData //simplegeo/occ/struct/NSData //simplegeo/occ/clconst/NSData //simplegeo/occ/intf/NSData" --><span class="type">NSData</span><!-- /a --><span class="type">*</span>)<span class="param">data</span> <!-- a logicalPath="//simplegeo/occ/instm/forUsername //simplegeo/occ/clm/forUsername //simplegeo/occ/intfcm/forUsername //simplegeo/occ/intfm/forUsername //simplegeo/occ/func/forUsername //simplegeo/occ/ftmplt/forUsername //simplegeo/occ/defn/forUsername //simplegeo/occ/macro/forUsername" --><span class="function">forUsername</span><!-- /a -->:(<!-- a logicalPath="//simplegeo/occ/cl/NSString //simplegeo/occ/tdef/NSString //simplegeo/occ/tag/NSString //simplegeo/occ/econst/NSString //simplegeo/occ/struct/NSString //simplegeo/occ/clconst/NSString //simplegeo/occ/intf/NSString" --><span class="type">NSString</span><!-- /a --><span class="type">*</span>)<span class="param">username</span> 
+        <!-- a logicalPath="//simplegeo/occ/instm/andKey //simplegeo/occ/clm/andKey //simplegeo/occ/intfcm/andKey //simplegeo/occ/intfm/andKey //simplegeo/occ/func/andKey //simplegeo/occ/ftmplt/andKey //simplegeo/occ/defn/andKey //simplegeo/occ/macro/andKey" --><span class="function">andKey</span><!-- /a -->:(<!-- a logicalPath="//simplegeo/occ/cl/NSString //simplegeo/occ/tdef/NSString //simplegeo/occ/tag/NSString //simplegeo/occ/econst/NSString //simplegeo/occ/struct/NSString //simplegeo/occ/clconst/NSString //simplegeo/occ/intf/NSString" --><span class="type">NSString</span><!-- /a --><span class="type">*</span>)<!-- a logicalPath="//simplegeo/occ/econst/key //simplegeo/occ/data/key" --><span class="var">key</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt><code>data</code></dt>
+<dd><p>&#65532;The data to save.</p></dd>
+<dt><code>username</code></dt>
+<dd><p>&#65532;The username.</p></dd>
+<dt><code>key</code></dt>
+<dd><p>&#65532;The key.</p></dd>
+</dl>
+</div>
+<p></p>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/SGCommitLog/addError:forUsername:andKey:;   name=SGCommitLog::addError:forUsername:andKey: --><a name="//simplegeo/occ/instm/SGCommitLog/addError:forUsername:andKey:"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="addError:forUsername:andKey:">addError:forUsername:andKey:</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>&#65532;Adds an error for a user and a specified key.
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/void //simplegeo/occ/tdef/void //simplegeo/occ/tag/void //simplegeo/occ/econst/void //simplegeo/occ/struct/void //simplegeo/occ/clconst/void //simplegeo/occ/intf/void" --><span class="type">void</span><!-- /a -->) <!-- a logicalPath="//simplegeo/occ/instm/addError //simplegeo/occ/clm/addError //simplegeo/occ/intfcm/addError //simplegeo/occ/intfm/addError //simplegeo/occ/func/addError //simplegeo/occ/ftmplt/addError //simplegeo/occ/defn/addError //simplegeo/occ/macro/addError" --><span class="function">addError</span><!-- /a -->:(<!-- a logicalPath="//simplegeo/occ/cl/NSData //simplegeo/occ/tdef/NSData //simplegeo/occ/tag/NSData //simplegeo/occ/econst/NSData //simplegeo/occ/struct/NSData //simplegeo/occ/clconst/NSData //simplegeo/occ/intf/NSData" --><span class="type">NSData</span><!-- /a --><span class="type">*</span>)<span class="param">data</span> <!-- a logicalPath="//simplegeo/occ/instm/forUsername //simplegeo/occ/clm/forUsername //simplegeo/occ/intfcm/forUsername //simplegeo/occ/intfm/forUsername //simplegeo/occ/func/forUsername //simplegeo/occ/ftmplt/forUsername //simplegeo/occ/defn/forUsername //simplegeo/occ/macro/forUsername" --><span class="function">forUsername</span><!-- /a -->:(<!-- a logicalPath="//simplegeo/occ/cl/NSString //simplegeo/occ/tdef/NSString //simplegeo/occ/tag/NSString //simplegeo/occ/econst/NSString //simplegeo/occ/struct/NSString //simplegeo/occ/clconst/NSString //simplegeo/occ/intf/NSString" --><span class="type">NSString</span><!-- /a --><span class="type">*</span>)<span class="param">username</span> 
+        <!-- a logicalPath="//simplegeo/occ/instm/andKey //simplegeo/occ/clm/andKey //simplegeo/occ/intfcm/andKey //simplegeo/occ/intfm/andKey //simplegeo/occ/func/andKey //simplegeo/occ/ftmplt/andKey //simplegeo/occ/defn/andKey //simplegeo/occ/macro/andKey" --><span class="function">andKey</span><!-- /a -->:(<!-- a logicalPath="//simplegeo/occ/cl/NSString //simplegeo/occ/tdef/NSString //simplegeo/occ/tag/NSString //simplegeo/occ/econst/NSString //simplegeo/occ/struct/NSString //simplegeo/occ/clconst/NSString //simplegeo/occ/intf/NSString" --><span class="type">NSString</span><!-- /a --><span class="type">*</span>)<!-- a logicalPath="//simplegeo/occ/econst/key //simplegeo/occ/data/key" --><span class="var">key</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt><code>data</code></dt>
+<dd><p>&#65532;The data to save as an error.</p></dd>
+<dt><code>username</code></dt>
+<dd><p>&#65532;The username.</p></dd>
+<dt><code>key</code></dt>
+<dd><p>&#65532;The key.</p></dd>
+</dl>
+</div>
+<p></p>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/SGCommitLog/clear;   name=SGCommitLog::clear --><a name="//simplegeo/occ/instm/SGCommitLog/clear"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="clear">clear</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>Deletes all commits that are loaded into memory.
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/void //simplegeo/occ/tdef/void //simplegeo/occ/tag/void //simplegeo/occ/econst/void //simplegeo/occ/struct/void //simplegeo/occ/clconst/void //simplegeo/occ/intf/void" --><span class="type">void</span><!-- /a -->) <!-- a logicalPath="//simplegeo/occ/econst/clear //simplegeo/occ/data/clear" --><span class="var">clear</span><!-- /a -->; </pre>
+</div>
+<p></p>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/SGCommitLog/deleteAllUsernames;   name=SGCommitLog::deleteAllUsernames --><a name="//simplegeo/occ/instm/SGCommitLog/deleteAllUsernames"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="deleteAllUsernames">deleteAllUsernames</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>Deletes all of the user directories for this
+commit log.
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/void //simplegeo/occ/tdef/void //simplegeo/occ/tag/void //simplegeo/occ/econst/void //simplegeo/occ/struct/void //simplegeo/occ/clconst/void //simplegeo/occ/intf/void" --><span class="type">void</span><!-- /a -->) <!-- a logicalPath="//simplegeo/occ/econst/deleteAllUsernames //simplegeo/occ/data/deleteAllUsernames" --><span class="var">deleteAllUsernames</span><!-- /a -->; </pre>
+</div>
+<p></p>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/SGCommitLog/deleteUsername:;   name=SGCommitLog::deleteUsername: --><a name="//simplegeo/occ/instm/SGCommitLog/deleteUsername:"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="deleteUsername:">deleteUsername:</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>Deletes all commits for a given user.
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/void //simplegeo/occ/tdef/void //simplegeo/occ/tag/void //simplegeo/occ/econst/void //simplegeo/occ/struct/void //simplegeo/occ/clconst/void //simplegeo/occ/intf/void" --><span class="type">void</span><!-- /a -->) <!-- a logicalPath="//simplegeo/occ/instm/deleteUsername //simplegeo/occ/clm/deleteUsername //simplegeo/occ/intfcm/deleteUsername //simplegeo/occ/intfm/deleteUsername //simplegeo/occ/func/deleteUsername //simplegeo/occ/ftmplt/deleteUsername //simplegeo/occ/defn/deleteUsername //simplegeo/occ/macro/deleteUsername" --><span class="function">deleteUsername</span><!-- /a -->:(<!-- a logicalPath="//simplegeo/occ/cl/NSString //simplegeo/occ/tdef/NSString //simplegeo/occ/tag/NSString //simplegeo/occ/econst/NSString //simplegeo/occ/struct/NSString //simplegeo/occ/clconst/NSString //simplegeo/occ/intf/NSString" --><span class="type">NSString</span><!-- /a --><span class="type">*</span>)<!-- a logicalPath="//simplegeo/occ/econst/username //simplegeo/occ/data/username" --><span class="var">username</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt><code>username</code></dt>
+<dd><p>&#65532;The name of the user to delete.</p></dd>
+</dl>
+</div>
+<p></p>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/SGCommitLog/deleteUsername:key:;   name=SGCommitLog::deleteUsername:key: --><a name="//simplegeo/occ/instm/SGCommitLog/deleteUsername:key:"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="deleteUsername:key:">deleteUsername:key:</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>Deletes all commits for a given user and key.
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/void //simplegeo/occ/tdef/void //simplegeo/occ/tag/void //simplegeo/occ/econst/void //simplegeo/occ/struct/void //simplegeo/occ/clconst/void //simplegeo/occ/intf/void" --><span class="type">void</span><!-- /a -->) <!-- a logicalPath="//simplegeo/occ/instm/deleteUsername //simplegeo/occ/clm/deleteUsername //simplegeo/occ/intfcm/deleteUsername //simplegeo/occ/intfm/deleteUsername //simplegeo/occ/func/deleteUsername //simplegeo/occ/ftmplt/deleteUsername //simplegeo/occ/defn/deleteUsername //simplegeo/occ/macro/deleteUsername" --><span class="function">deleteUsername</span><!-- /a -->:(<!-- a logicalPath="//simplegeo/occ/cl/NSString //simplegeo/occ/tdef/NSString //simplegeo/occ/tag/NSString //simplegeo/occ/econst/NSString //simplegeo/occ/struct/NSString //simplegeo/occ/clconst/NSString //simplegeo/occ/intf/NSString" --><span class="type">NSString</span><!-- /a --><span class="type">*</span>)<span class="param">username</span> <!-- a logicalPath="//simplegeo/occ/instm/key //simplegeo/occ/clm/key //simplegeo/occ/intfcm/key //simplegeo/occ/intfm/key //simplegeo/occ/func/key //simplegeo/occ/ftmplt/key //simplegeo/occ/defn/key //simplegeo/occ/macro/key" --><span class="function">key</span><!-- /a -->:(<!-- a logicalPath="//simplegeo/occ/cl/NSString //simplegeo/occ/tdef/NSString //simplegeo/occ/tag/NSString //simplegeo/occ/econst/NSString //simplegeo/occ/struct/NSString //simplegeo/occ/clconst/NSString //simplegeo/occ/intf/NSString" --><span class="type">NSString</span><!-- /a --><span class="type">*</span>)<!-- a logicalPath="//simplegeo/occ/econst/key //simplegeo/occ/data/key" --><span class="var">key</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt><code>username</code></dt>
+<dd><p>&#65532;The name of the user to delete.</p></dd>
+<dt><code>key</code></dt>
+<dd><p>&#65532;The key to delete.</p></dd>
+</dl>
+</div>
+<p></p>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/SGCommitLog/flush;   name=SGCommitLog::flush --><a name="//simplegeo/occ/instm/SGCommitLog/flush"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="flush">flush</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>&#65532;Saves all commits onto disk.
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/void //simplegeo/occ/tdef/void //simplegeo/occ/tag/void //simplegeo/occ/econst/void //simplegeo/occ/struct/void //simplegeo/occ/clconst/void //simplegeo/occ/intf/void" --><span class="type">void</span><!-- /a -->) <!-- a logicalPath="//simplegeo/occ/econst/flush //simplegeo/occ/data/flush" --><span class="var">flush</span><!-- /a -->; </pre>
+</div>
+<p></p>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/SGCommitLog/getAllCommitsForUsername:;   name=SGCommitLog::getAllCommitsForUsername: --><a name="//simplegeo/occ/instm/SGCommitLog/getAllCommitsForUsername:"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="getAllCommitsForUsername:">getAllCommitsForUsername:</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>&#65532;Retrieves all commits for a given user that are loaded into
+memory.
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/NSMutableDictionary //simplegeo/occ/tdef/NSMutableDictionary //simplegeo/occ/tag/NSMutableDictionary //simplegeo/occ/econst/NSMutableDictionary //simplegeo/occ/struct/NSMutableDictionary //simplegeo/occ/clconst/NSMutableDictionary //simplegeo/occ/intf/NSMutableDictionary" --><span class="type">NSMutableDictionary</span><!-- /a --><span class="type">*</span>) <!-- a logicalPath="//simplegeo/occ/instm/getAllCommitsForUsername //simplegeo/occ/clm/getAllCommitsForUsername //simplegeo/occ/intfcm/getAllCommitsForUsername //simplegeo/occ/intfm/getAllCommitsForUsername //simplegeo/occ/func/getAllCommitsForUsername //simplegeo/occ/ftmplt/getAllCommitsForUsername //simplegeo/occ/defn/getAllCommitsForUsername //simplegeo/occ/macro/getAllCommitsForUsername" --><span class="function">getAllCommitsForUsername</span><!-- /a -->:(<!-- a logicalPath="//simplegeo/occ/cl/NSString //simplegeo/occ/tdef/NSString //simplegeo/occ/tag/NSString //simplegeo/occ/econst/NSString //simplegeo/occ/struct/NSString //simplegeo/occ/clconst/NSString //simplegeo/occ/intf/NSString" --><span class="type">NSString</span><!-- /a --><span class="type">*</span>)<!-- a logicalPath="//simplegeo/occ/econst/username //simplegeo/occ/data/username" --><span class="var">username</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt><code>username</code></dt>
+<dd><p>&#65532;The name of the user.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value -->&#65532;All commits for a given user.
+
+<!-- end return value --></p>
+<p></p>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/SGCommitLog/getCommitCountForUsername:key:;   name=SGCommitLog::getCommitCountForUsername:key: --><a name="//simplegeo/occ/instm/SGCommitLog/getCommitCountForUsername:key:"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="getCommitCountForUsername:key:">getCommitCountForUsername:key:</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>Retreives the amount of commits a user has for a key that
+are currently loaded into memory.
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/int //simplegeo/occ/tdef/int //simplegeo/occ/tag/int //simplegeo/occ/econst/int //simplegeo/occ/struct/int //simplegeo/occ/clconst/int //simplegeo/occ/intf/int" --><span class="type">int</span><!-- /a -->) <!-- a logicalPath="//simplegeo/occ/instm/getCommitCountForUsername //simplegeo/occ/clm/getCommitCountForUsername //simplegeo/occ/intfcm/getCommitCountForUsername //simplegeo/occ/intfm/getCommitCountForUsername //simplegeo/occ/func/getCommitCountForUsername //simplegeo/occ/ftmplt/getCommitCountForUsername //simplegeo/occ/defn/getCommitCountForUsername //simplegeo/occ/macro/getCommitCountForUsername" --><span class="function">getCommitCountForUsername</span><!-- /a -->:(<!-- a logicalPath="//simplegeo/occ/cl/NSString //simplegeo/occ/tdef/NSString //simplegeo/occ/tag/NSString //simplegeo/occ/econst/NSString //simplegeo/occ/struct/NSString //simplegeo/occ/clconst/NSString //simplegeo/occ/intf/NSString" --><span class="type">NSString</span><!-- /a --><span class="type">*</span>)<span class="param">username</span> <!-- a logicalPath="//simplegeo/occ/instm/key //simplegeo/occ/clm/key //simplegeo/occ/intfcm/key //simplegeo/occ/intfm/key //simplegeo/occ/func/key //simplegeo/occ/ftmplt/key //simplegeo/occ/defn/key //simplegeo/occ/macro/key" --><span class="function">key</span><!-- /a -->:(<!-- a logicalPath="//simplegeo/occ/cl/NSString //simplegeo/occ/tdef/NSString //simplegeo/occ/tag/NSString //simplegeo/occ/econst/NSString //simplegeo/occ/struct/NSString //simplegeo/occ/clconst/NSString //simplegeo/occ/intf/NSString" --><span class="type">NSString</span><!-- /a --><span class="type">*</span>)<!-- a logicalPath="//simplegeo/occ/econst/key //simplegeo/occ/data/key" --><span class="var">key</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt><code>username</code></dt>
+<dd><p>&#65532;The name of the user.</p></dd>
+<dt><code>key</code></dt>
+<dd><p>&#65532;The key.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value -->&#65532;The amount of commits.
+
+<!-- end return value --></p>
+<p></p>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/SGCommitLog/getCommitsForUsername:key:;   name=SGCommitLog::getCommitsForUsername:key: --><a name="//simplegeo/occ/instm/SGCommitLog/getCommitsForUsername:key:"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="getCommitsForUsername:key:">getCommitsForUsername:key:</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>&#65532;Retrieves all commits for a given user and key that are loaded
+into memory.
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/NSMutableDictionary //simplegeo/occ/tdef/NSMutableDictionary //simplegeo/occ/tag/NSMutableDictionary //simplegeo/occ/econst/NSMutableDictionary //simplegeo/occ/struct/NSMutableDictionary //simplegeo/occ/clconst/NSMutableDictionary //simplegeo/occ/intf/NSMutableDictionary" --><span class="type">NSMutableDictionary</span><!-- /a --><span class="type">*</span>) <!-- a logicalPath="//simplegeo/occ/instm/getCommitsForUsername //simplegeo/occ/clm/getCommitsForUsername //simplegeo/occ/intfcm/getCommitsForUsername //simplegeo/occ/intfm/getCommitsForUsername //simplegeo/occ/func/getCommitsForUsername //simplegeo/occ/ftmplt/getCommitsForUsername //simplegeo/occ/defn/getCommitsForUsername //simplegeo/occ/macro/getCommitsForUsername" --><span class="function">getCommitsForUsername</span><!-- /a -->:(<!-- a logicalPath="//simplegeo/occ/cl/NSString //simplegeo/occ/tdef/NSString //simplegeo/occ/tag/NSString //simplegeo/occ/econst/NSString //simplegeo/occ/struct/NSString //simplegeo/occ/clconst/NSString //simplegeo/occ/intf/NSString" --><span class="type">NSString</span><!-- /a --><span class="type">*</span>)<span class="param">username</span> 
+        <!-- a logicalPath="//simplegeo/occ/instm/key //simplegeo/occ/clm/key //simplegeo/occ/intfcm/key //simplegeo/occ/intfm/key //simplegeo/occ/func/key //simplegeo/occ/ftmplt/key //simplegeo/occ/defn/key //simplegeo/occ/macro/key" --><span class="function">key</span><!-- /a -->:(<!-- a logicalPath="//simplegeo/occ/cl/NSString //simplegeo/occ/tdef/NSString //simplegeo/occ/tag/NSString //simplegeo/occ/econst/NSString //simplegeo/occ/struct/NSString //simplegeo/occ/clconst/NSString //simplegeo/occ/intf/NSString" --><span class="type">NSString</span><!-- /a --><span class="type">*</span>)<!-- a logicalPath="//simplegeo/occ/econst/key //simplegeo/occ/data/key" --><span class="var">key</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt><code>username</code></dt>
+<dd><p>The name of the user.</p></dd>
+<dt><code>key</code></dt>
+<dd><p>&#65532;The key.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value -->&#65532;All commits for a given user and key.
+
+<!-- end return value --></p>
+<p></p>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/SGCommitLog/getErrorCountForUsername:key:;   name=SGCommitLog::getErrorCountForUsername:key: --><a name="//simplegeo/occ/instm/SGCommitLog/getErrorCountForUsername:key:"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="getErrorCountForUsername:key:">getErrorCountForUsername:key:</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>&#65532;Retreives the amount of errors a user has for a key that
+are currently loaded into memory.
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/int //simplegeo/occ/tdef/int //simplegeo/occ/tag/int //simplegeo/occ/econst/int //simplegeo/occ/struct/int //simplegeo/occ/clconst/int //simplegeo/occ/intf/int" --><span class="type">int</span><!-- /a -->) <!-- a logicalPath="//simplegeo/occ/instm/getErrorCountForUsername //simplegeo/occ/clm/getErrorCountForUsername //simplegeo/occ/intfcm/getErrorCountForUsername //simplegeo/occ/intfm/getErrorCountForUsername //simplegeo/occ/func/getErrorCountForUsername //simplegeo/occ/ftmplt/getErrorCountForUsername //simplegeo/occ/defn/getErrorCountForUsername //simplegeo/occ/macro/getErrorCountForUsername" --><span class="function">getErrorCountForUsername</span><!-- /a -->:(<!-- a logicalPath="//simplegeo/occ/cl/NSString //simplegeo/occ/tdef/NSString //simplegeo/occ/tag/NSString //simplegeo/occ/econst/NSString //simplegeo/occ/struct/NSString //simplegeo/occ/clconst/NSString //simplegeo/occ/intf/NSString" --><span class="type">NSString</span><!-- /a --><span class="type">*</span>)<span class="param">username</span> <!-- a logicalPath="//simplegeo/occ/instm/key //simplegeo/occ/clm/key //simplegeo/occ/intfcm/key //simplegeo/occ/intfm/key //simplegeo/occ/func/key //simplegeo/occ/ftmplt/key //simplegeo/occ/defn/key //simplegeo/occ/macro/key" --><span class="function">key</span><!-- /a -->:(<!-- a logicalPath="//simplegeo/occ/cl/NSString //simplegeo/occ/tdef/NSString //simplegeo/occ/tag/NSString //simplegeo/occ/econst/NSString //simplegeo/occ/struct/NSString //simplegeo/occ/clconst/NSString //simplegeo/occ/intf/NSString" --><span class="type">NSString</span><!-- /a --><span class="type">*</span>)<!-- a logicalPath="//simplegeo/occ/econst/key //simplegeo/occ/data/key" --><span class="var">key</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt><code>username</code></dt>
+<dd><p>&#65532;The name of the user.</p></dd>
+<dt><code>key</code></dt>
+<dd><p>&#65532;The key.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value -->&#65532;The amont of errors.
+
+<!-- end return value --></p>
+<p></p>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/SGCommitLog/initWithName:;   name=SGCommitLog::initWithName: --><a name="//simplegeo/occ/instm/SGCommitLog/initWithName:"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="initWithName:">initWithName:</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>&#65532;Initializes a new commit log that will write
+all commits in a directory called name
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/id //simplegeo/occ/tdef/id //simplegeo/occ/tag/id //simplegeo/occ/econst/id //simplegeo/occ/struct/id //simplegeo/occ/clconst/id //simplegeo/occ/intf/id" --><span class="type">id</span><!-- /a -->) <!-- a logicalPath="//simplegeo/occ/instm/initWithName //simplegeo/occ/clm/initWithName //simplegeo/occ/intfcm/initWithName //simplegeo/occ/intfm/initWithName //simplegeo/occ/func/initWithName //simplegeo/occ/ftmplt/initWithName //simplegeo/occ/defn/initWithName //simplegeo/occ/macro/initWithName" --><span class="function">initWithName</span><!-- /a -->:(<!-- a logicalPath="//simplegeo/occ/cl/NSString //simplegeo/occ/tdef/NSString //simplegeo/occ/tag/NSString //simplegeo/occ/econst/NSString //simplegeo/occ/struct/NSString //simplegeo/occ/clconst/NSString //simplegeo/occ/intf/NSString" --><span class="type">NSString</span><!-- /a --><span class="type">*</span>)<!-- a logicalPath="//simplegeo/occ/econst/name //simplegeo/occ/data/name" --><span class="var">name</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt><code>name</code></dt>
+<dd><p>&#65532;The directory to create for the commit log.</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value -->&#65532;
+
+<!-- end return value --></p>
+<p></p>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/SGCommitLog/reload;   name=SGCommitLog::reload --><a name="//simplegeo/occ/instm/SGCommitLog/reload"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="reload">reload</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>&#65532;Reloads all commits from disk into memory.
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/void //simplegeo/occ/tdef/void //simplegeo/occ/tag/void //simplegeo/occ/econst/void //simplegeo/occ/struct/void //simplegeo/occ/clconst/void //simplegeo/occ/intf/void" --><span class="type">void</span><!-- /a -->) <!-- a logicalPath="//simplegeo/occ/econst/reload //simplegeo/occ/data/reload" --><span class="var">reload</span><!-- /a -->; </pre>
+</div>
+<p></p>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/SGCommitLog/replay:;   name=SGCommitLog::replay: --><a name="//simplegeo/occ/instm/SGCommitLog/replay:"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="replay:">replay:</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>&#65532;Replays all of the commits made by a user.
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/void //simplegeo/occ/tdef/void //simplegeo/occ/tag/void //simplegeo/occ/econst/void //simplegeo/occ/struct/void //simplegeo/occ/clconst/void //simplegeo/occ/intf/void" --><span class="type">void</span><!-- /a -->) <!-- a logicalPath="//simplegeo/occ/instm/replay //simplegeo/occ/clm/replay //simplegeo/occ/intfcm/replay //simplegeo/occ/intfm/replay //simplegeo/occ/func/replay //simplegeo/occ/ftmplt/replay //simplegeo/occ/defn/replay //simplegeo/occ/macro/replay" --><span class="function">replay</span><!-- /a -->:(<!-- a logicalPath="//simplegeo/occ/cl/NSString //simplegeo/occ/tdef/NSString //simplegeo/occ/tag/NSString //simplegeo/occ/econst/NSString //simplegeo/occ/struct/NSString //simplegeo/occ/clconst/NSString //simplegeo/occ/intf/NSString" --><span class="type">NSString</span><!-- /a --><span class="type">*</span>)<!-- a logicalPath="//simplegeo/occ/econst/username //simplegeo/occ/data/username" --><span class="var">username</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt><code>username</code></dt>
+<dd><p>The username to load commits for.</p></dd>
+</dl>
+</div>
+<h5 class="tight">
+<font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5>
+<!-- begin discussion --><p>Commits for the user are loaded into memory
+and then sent of to the <a href="../../../../Documentation/SGCommitLog_h/Classes/SGCommitLog/index.html#//simplegeo/occ/instp/SGCommitLog/delegate" logicalPath="//simplegeo/occ/instp/SGCommitLog/delegate">delegate</a> for some
+replay action. Once the commits have been replayed, they are deleted
+from disk.
+<!-- end discussion -->
+</p>
+<p></p>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/SGCommitLog/startFlushTimer;   name=SGCommitLog::startFlushTimer --><a name="//simplegeo/occ/instm/SGCommitLog/startFlushTimer"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="startFlushTimer">startFlushTimer</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>&#65532;Starts the flush timer which will write all commits in memory
+to a file.
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/void //simplegeo/occ/tdef/void //simplegeo/occ/tag/void //simplegeo/occ/econst/void //simplegeo/occ/struct/void //simplegeo/occ/clconst/void //simplegeo/occ/intf/void" --><span class="type">void</span><!-- /a -->) <!-- a logicalPath="//simplegeo/occ/econst/startFlushTimer //simplegeo/occ/data/startFlushTimer" --><span class="var">startFlushTimer</span><!-- /a -->; </pre>
+</div>
+<p></p>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/SGCommitLog/stopFlushTimer;   name=SGCommitLog::stopFlushTimer --><a name="//simplegeo/occ/instm/SGCommitLog/stopFlushTimer"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="stopFlushTimer">stopFlushTimer</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>Stops the flush timer that is in charge of writing commits to
+a file.
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/void //simplegeo/occ/tdef/void //simplegeo/occ/tag/void //simplegeo/occ/econst/void //simplegeo/occ/struct/void //simplegeo/occ/clconst/void //simplegeo/occ/intf/void" --><span class="type">void</span><!-- /a -->) <!-- a logicalPath="//simplegeo/occ/econst/stopFlushTimer //simplegeo/occ/data/stopFlushTimer" --><span class="var">stopFlushTimer</span><!-- /a -->; </pre>
+</div>
+<p></p>
+<a name="HeaderDoc_props"></a>
+<h2>Properties</h2>
+<dl>
+<dt><tt><a href="index.html#//simplegeo/occ/instp/SGCommitLog/delegate" target="_top">delegate</a></tt></dt>
+<dd><p>The delegate that will recieve replay notifications.
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instp/SGCommitLog/flushTimeInterval" target="_top">flushTimeInterval</a></tt></dt>
+<dd><p>The time interval for the flush timer that calls <a href="../../../../Documentation/SGCommitLog_h/Classes/SGCommitLog/index.html#//simplegeo/occ/instm/SGCommitLog/flush" logicalPath="//simplegeo/occ/instm/SGCommitLog/flush">flush</a> .
+</p></dd>
+</dl>
+<hr>
+<!-- headerDoc=instp;  uid=//simplegeo/occ/instp/SGCommitLog/delegate;   name=SGCommitLog::delegate --><a name="//simplegeo/occ/instp/SGCommitLog/delegate"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="delegate">delegate</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>The delegate that will recieve replay notifications.
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>@property (
+    <span class="param">nonatomic</span>,
+    <span class="param">assign</span>) <!-- a logicalPath="//simplegeo/occ/cl/id //simplegeo/occ/tdef/id //simplegeo/occ/tag/id //simplegeo/occ/econst/id //simplegeo/occ/struct/id //simplegeo/occ/clconst/id //simplegeo/occ/intf/id" --><span class="type">id</span><!-- /a -->&lt;<span class="template">SGCommitLogReplayDelegate</span>&gt; <!-- a logicalPath="//simplegeo/occ/econst/delegate //simplegeo/occ/data/delegate" --><span class="var">delegate</span><!-- /a -->; </pre>
+</div>
+<p></p>
+<hr>
+<!-- headerDoc=instp;  uid=//simplegeo/occ/instp/SGCommitLog/flushTimeInterval;   name=SGCommitLog::flushTimeInterval --><a name="//simplegeo/occ/instp/SGCommitLog/flushTimeInterval"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="flushTimeInterval">flushTimeInterval</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>The time interval for the flush timer that calls <a href="../../../../Documentation/SGCommitLog_h/Classes/SGCommitLog/index.html#//simplegeo/occ/instm/SGCommitLog/flush" logicalPath="//simplegeo/occ/instm/SGCommitLog/flush">flush</a>.
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>@property (
+    <span class="param">nonatomic</span>,
+    <span class="param">assign</span>) <!-- a logicalPath="//simplegeo/occ/cl/NSTimeInterval //simplegeo/occ/tdef/NSTimeInterval //simplegeo/occ/tag/NSTimeInterval //simplegeo/occ/econst/NSTimeInterval //simplegeo/occ/struct/NSTimeInterval //simplegeo/occ/clconst/NSTimeInterval //simplegeo/occ/intf/NSTimeInterval" --><span class="type">NSTimeInterval</span><!-- /a --> <!-- a logicalPath="//simplegeo/occ/econst/flushTimeInterval //simplegeo/occ/data/flushTimeInterval" --><span class="var">flushTimeInterval</span><!-- /a -->; </pre>
+</div>
+<p></p>
+<p><!-- start of footer -->
+
+<!-- end of footer -->
+</p>
+<p>&copy; SimpleGeo Last Updated: 08/20/2010
+</p>
+</div>
+</body>
+</html>

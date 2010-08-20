@@ -1,0 +1,711 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<title>API Reference: Device Drivers (Kernel/IOKit)</title>
+<style type="text/css"><!--#pagehead {
+    FONT-WEIGHT: bold; FONT-SIZE: 32px; COLOR: #000000;
+    FONT-FAMILY: lucida grande, geneva, helvetica, arial, sans-serif; }
+    td { font-size: 10px; } a:link {text-decoration: none;
+    font-family: lucida grande, geneva, helvetica, arial, sans-serif;
+    color: #0000ff;} a:visited {text-decoration: none;
+    font-family: lucida grande, geneva, helvetica, arial, sans-serif;
+    color: #0000ff;} a:visited:hover {text-decoration: underline;
+    font-family: lucida grande, geneva, helvetica, arial, sans-serif;
+    color: #ff6600;} a:active {text-decoration: none;
+    font-family: lucida grande, geneva, helvetica, arial, sans-serif;
+    color: #ff6600;} a:hover {text-decoration: underline;
+    font-family: lucida grande, geneva, helvetica, arial, sans-serif;
+    color: #ff6600;} h4 {text-decoration: none;
+    font-family: lucida grande, geneva, helvetica, arial, sans-serif;
+    font-size: tiny; font-weight: bold;} body {text-decoration: none;
+    font-family: lucida grande, geneva, helvetica, arial, sans-serif;
+    font-size: 10pt;} -->
+ </style>
+<link rel="stylesheet" type="text/css" href="./css/TOCmaster.css">
+</head>
+<head><meta name="ROBOTS" content="NOINDEX"></head>
+<body>
+<center>
+ 
+<div id="header">
+	<h1 class="logo">
+		<a href="http://simplegeo.com" class="logoReplace">SimpleGeo</a>
+	 </h1>
+</div> 
+
+<div id="content">
+
+<table border="0" cellpadding="0" cellspacing="0" width="500">
+<tr height="5">
+<td width="00" height="5"><br></td>
+    </tr>
+<tr>
+<td width="500">
+            <div id="pagehead"></div>
+        </td>
+    </tr>
+<tr height="10">
+<td width="500" height="10"><br></td>
+    </tr>
+<tr>
+<td valign="top" width="500">
+<font face="Geneva,Helvetica,Arial" size="2"><span id="bodytext"></span></font>
+        </td>
+    </tr>
+<tr height="10">
+<td height="10" width="500"></td>
+    </tr>
+<tr height="5">
+<td height="5" width="500">
+            <hr alt="">
+<br>
+</td>
+    </tr>
+<tr>
+<td width="500" align="center" valign="top">
+
+		<h2>Classes</h2>
+                <blockquote class="groupindent">
+<table border="0" cellpadding="1" cellspacing="10" width="600">
+<tr>
+<td width="25%">
+<a name="group___class_NS" href="SGGeoJSON+NSDictionary_h/Classes/NSDictionary_SGGeoJSONObject_/index.html" target="_top">NSDictionary(SGGeoJSONObject)</a><br>
+</td>
+<td width="25%">
+<a href="SGGeoJSONEncoder_h/Classes/SGGeoJSONEncoder/index.html" target="_top">SGGeoJSONEncoder</a><br>
+</td>
+<td width="25%">
+<a href="SGLocationManager_h/Classes/SGLocationManager/index.html" target="_top">SGLocationManager</a><br>
+</td>
+<td width="25%">
+<a href="SGRecord_h/Classes/SGRecord/index.html" target="_top">SGRecord</a><br>
+</td>
+</tr>
+<tr>
+<td width="25%">
+<a name="group___class_SG" href="SGCacheHandler_h/Classes/SGCacheHandler/index.html" target="_top">SGCacheHandler</a><br>
+</td>
+<td width="25%">
+<a href="SGHistoryQuery_h/Classes/SGHistoryQuery/index.html" target="_top">SGHistoryQuery</a><br>
+</td>
+<td width="25%">
+<a href="SGLocationService_h/Classes/SGLocationService/index.html" target="_top">SGLocationService</a><br>
+</td>
+<td width="25%">
+<a name="group___class_ST" href="SGLayer_h/Classes/SGLayer/Classes/storeRetrievedRecords/index.html" target="_top">storeRetrievedRecords</a><br>
+</td>
+</tr>
+<tr>
+<td width="25%">
+<a href="SGCommitLog_h/Classes/SGCommitLog/index.html" target="_top">SGCommitLog</a><br>
+</td>
+<td width="25%">
+<a href="SGLatLonNearbyQuery_h/Classes/SGLatLonNearbyQuery/index.html" target="_top">SGLatLonNearbyQuery</a><br>
+</td>
+<td width="25%">
+<a href="SGNearbyQuery_h/Classes/SGNearbyQuery/index.html" target="_top">SGNearbyQuery</a><br>
+</td>
+<td width="25%"></td>
+</tr>
+<tr>
+<td width="25%">
+<a href="SGGeohashNearbyQuery_h/Classes/SGGeohashNearbyQuery/index.html" target="_top">SGGeohashNearbyQuery</a><br>
+</td>
+<td width="25%">
+<a href="SGLayer_h/Classes/SGLayer/index.html" target="_top">SGLayer</a><br>
+</td>
+<td width="25%">
+<a href="SGOAuth_h/Classes/SGOAuth/index.html" target="_top">SGOAuth</a><br>
+</td>
+<td width="25%"></td>
+</tr>
+</table>
+</blockquote>
+
+        <h2>Protocols</h2>
+                <blockquote class="groupindent">
+<table border="0" cellpadding="1" cellspacing="10" width="600">
+<tr>
+<td width="25%">
+<a name="group___protocol_SG" href="SGRecordAnnotation_h/Protocols/SGAnnotation/index.html" target="_top">SGAnnotation</a><br>
+</td>
+<td width="25%">
+<a href="SGCommitLog_h/Protocols/SGCommitLogReplayDelegate/index.html" target="_top">SGCommitLogReplayDelegate</a><br>
+</td>
+<td width="25%">
+<a href="SGLocationManager_h/Protocols/SGLocationManagerDelegate/index.html" target="_top">SGLocationManagerDelegate</a><br>
+</td>
+<td width="25%">
+<a href="SGQuery_h/Protocols/SGQuery/index.html" target="_top">SGQuery</a><br>
+</td>
+</tr>
+<tr>
+<td width="25%">
+<a href="SGAuthorization_h/Protocols/SGAuthorization/index.html" target="_top">SGAuthorization</a><br>
+</td>
+<td width="25%">
+<a href="SGRecordAnnotation_h/Protocols/SGHistoricRecordAnnoation/index.html" target="_top">SGHistoricRecordAnnoation</a><br>
+</td>
+<td width="25%">
+<a href="SGLocationService_h/Protocols/SGLocationServiceDelegate/index.html" target="_top">SGLocationServiceDelegate</a><br>
+</td>
+<td width="25%">
+<a href="SGRecordAnnotation_h/Protocols/SGRecordAnnotation/index.html" target="_top">SGRecordAnnotation</a><br>
+</td>
+</tr>
+</table>
+</blockquote>
+
+		<h2>Methods</h2>
+				<blockquote class="letterlist"><table width="80%"><tr><td>
+<a href="#group___function_NS">N</a>&nbsp;<span class="hierpipe">|</span> 
+<a href="#group___function_SE">S-SE</a>&nbsp;<span class="hierpipe">|</span> 
+<a href="#group___function_SG">SG-SZ</a>
+</td></tr></table></blockquote>
+<blockquote class="groupindent">
+<table border="0" cellpadding="1" cellspacing="10" width="600">
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/NSArray(GeoJSONObject)/latitude" name="group___function_NS" retarget="yes" target="_top" href="../Documentation/GeoJSON+NSArray_h/Categories/NSArray_GeoJSONObject_/index.html#//simplegeo/occ/instm/NSArray(GeoJSONObject)/latitude">NSArray(GeoJSONObject)::latitude</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGCommitLog/clear" retarget="yes" target="_top" href="../Documentation/SGCommitLog_h/Classes/SGCommitLog/index.html#//simplegeo/occ/instm/SGCommitLog/clear">SGCommitLog::clear</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLocationService/contains:" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Classes/SGLocationService/index.html#//simplegeo/occ/instm/SGLocationService/contains:">SGLocationService::contains:</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/NSArray(GeoJSONObject)/longitude" retarget="yes" target="_top" href="../Documentation/GeoJSON+NSArray_h/Categories/NSArray_GeoJSONObject_/index.html#//simplegeo/occ/instm/NSArray(GeoJSONObject)/longitude">NSArray(GeoJSONObject)::longitude</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGCommitLog/deleteAllUsernames" retarget="yes" target="_top" href="../Documentation/SGCommitLog_h/Classes/SGCommitLog/index.html#//simplegeo/occ/instm/SGCommitLog/deleteAllUsernames">SGCommitLog::deleteAllUsernames</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLocationService/deleteRecord:layer:" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Classes/SGLocationService/index.html#//simplegeo/occ/instm/SGLocationService/deleteRecord:layer:">SGLocationService::deleteRecord:layer:</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/NSArray(GeoJSONObject)/x" retarget="yes" target="_top" href="../Documentation/GeoJSON+NSArray_h/Categories/NSArray_GeoJSONObject_/index.html#//simplegeo/occ/instm/NSArray(GeoJSONObject)/x">NSArray(GeoJSONObject)::x</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGCommitLog/deleteUsername:" retarget="yes" target="_top" href="../Documentation/SGCommitLog_h/Classes/SGCommitLog/index.html#//simplegeo/occ/instm/SGCommitLog/deleteUsername:">SGCommitLog::deleteUsername:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLocationService/deleteRecordAnnotation:" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Classes/SGLocationService/index.html#//simplegeo/occ/instm/SGLocationService/deleteRecordAnnotation:">SGLocationService::deleteRecordAnnotation:</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/NSArray(GeoJSONObject)/y" retarget="yes" target="_top" href="../Documentation/GeoJSON+NSArray_h/Categories/NSArray_GeoJSONObject_/index.html#//simplegeo/occ/instm/NSArray(GeoJSONObject)/y">NSArray(GeoJSONObject)::y</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGCommitLog/deleteUsername:key:" retarget="yes" target="_top" href="../Documentation/SGCommitLog_h/Classes/SGCommitLog/index.html#//simplegeo/occ/instm/SGCommitLog/deleteUsername:key:">SGCommitLog::deleteUsername:key:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLocationService/deleteRecordAnnotations:" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Classes/SGLocationService/index.html#//simplegeo/occ/instm/SGLocationService/deleteRecordAnnotations:">SGLocationService::deleteRecordAnnotations:</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/coordinates" retarget="yes" target="_top" href="../Documentation/GeoJSON+NSDictionary_h/Categories/NSDictionary_GeoJSONObject_/index.html#//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/coordinates">NSDictionary(GeoJSONObject)::coordinates</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGCommitLog/flush" retarget="yes" target="_top" href="../Documentation/SGCommitLog_h/Classes/SGCommitLog/index.html#//simplegeo/occ/instm/SGCommitLog/flush">SGCommitLog::flush</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLocationService/densityForCoordinate:day:" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Classes/SGLocationService/index.html#//simplegeo/occ/instm/SGLocationService/densityForCoordinate:day:">SGLocationService::densityForCoordinate:day:</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/features" retarget="yes" target="_top" href="../Documentation/GeoJSON+NSDictionary_h/Categories/NSDictionary_GeoJSONObject_/index.html#//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/features">NSDictionary(GeoJSONObject)::features</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGCommitLog/getAllCommitsForUsername:" retarget="yes" target="_top" href="../Documentation/SGCommitLog_h/Classes/SGCommitLog/index.html#//simplegeo/occ/instm/SGCommitLog/getAllCommitsForUsername:">SGCommitLog::getAllCommitsForUsername:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLocationService/densityForCoordinate:day:hour:" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Classes/SGLocationService/index.html#//simplegeo/occ/instm/SGLocationService/densityForCoordinate:day:hour:">SGLocationService::densityForCoordinate:day:hour:</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/geometries" retarget="yes" target="_top" href="../Documentation/GeoJSON+NSDictionary_h/Categories/NSDictionary_GeoJSONObject_/index.html#//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/geometries">NSDictionary(GeoJSONObject)::geometries</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGCommitLog/getCommitCountForUsername:key:" retarget="yes" target="_top" href="../Documentation/SGCommitLog_h/Classes/SGCommitLog/index.html#//simplegeo/occ/instm/SGCommitLog/getCommitCountForUsername:key:">SGCommitLog::getCommitCountForUsername:key:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLocationService/enterBackground" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Classes/SGLocationService/index.html#//simplegeo/occ/instm/SGLocationService/enterBackground">SGLocationService::enterBackground</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/geometry" retarget="yes" target="_top" href="../Documentation/GeoJSON+NSDictionary_h/Categories/NSDictionary_GeoJSONObject_/index.html#//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/geometry">NSDictionary(GeoJSONObject)::geometry</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGCommitLog/getCommitsForUsername:key:" retarget="yes" target="_top" href="../Documentation/SGCommitLog_h/Classes/SGCommitLog/index.html#//simplegeo/occ/instm/SGCommitLog/getCommitsForUsername:key:">SGCommitLog::getCommitsForUsername:key:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLocationService/getBackgroundActivityInformation" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Classes/SGLocationService/index.html#//simplegeo/occ/instm/SGLocationService/getBackgroundActivityInformation">SGLocationService::getBackgroundActivityInformation</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/isFeature" retarget="yes" target="_top" href="../Documentation/GeoJSON+NSDictionary_h/Categories/NSDictionary_GeoJSONObject_/index.html#//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/isFeature">NSDictionary(GeoJSONObject)::isFeature</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGCommitLog/getErrorCountForUsername:key:" retarget="yes" target="_top" href="../Documentation/SGCommitLog_h/Classes/SGCommitLog/index.html#//simplegeo/occ/instm/SGCommitLog/getErrorCountForUsername:key:">SGCommitLog::getErrorCountForUsername:key:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLocationService/history:" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Classes/SGLocationService/index.html#//simplegeo/occ/instm/SGLocationService/history:">SGLocationService::history:</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/isFeatureCollection" retarget="yes" target="_top" href="../Documentation/GeoJSON+NSDictionary_h/Categories/NSDictionary_GeoJSONObject_/index.html#//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/isFeatureCollection">NSDictionary(GeoJSONObject)::isFeatureCollection</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGCommitLog/initWithName:" retarget="yes" target="_top" href="../Documentation/SGCommitLog_h/Classes/SGCommitLog/index.html#//simplegeo/occ/instm/SGCommitLog/initWithName:">SGCommitLog::initWithName:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLocationService/layerInformation:" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Classes/SGLocationService/index.html#//simplegeo/occ/instm/SGLocationService/layerInformation:">SGLocationService::layerInformation:</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/isGeometryCollection" retarget="yes" target="_top" href="../Documentation/GeoJSON+NSDictionary_h/Categories/NSDictionary_GeoJSONObject_/index.html#//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/isGeometryCollection">NSDictionary(GeoJSONObject)::isGeometryCollection</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGCommitLog/reload" retarget="yes" target="_top" href="../Documentation/SGCommitLog_h/Classes/SGCommitLog/index.html#//simplegeo/occ/instm/SGCommitLog/reload">SGCommitLog::reload</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLocationService/leaveBackground" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Classes/SGLocationService/index.html#//simplegeo/occ/instm/SGLocationService/leaveBackground">SGLocationService::leaveBackground</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/isMultiPolygon" retarget="yes" target="_top" href="../Documentation/GeoJSON+NSDictionary_h/Categories/NSDictionary_GeoJSONObject_/index.html#//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/isMultiPolygon">NSDictionary(GeoJSONObject)::isMultiPolygon</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGCommitLog/replay:" retarget="yes" target="_top" href="../Documentation/SGCommitLog_h/Classes/SGCommitLog/index.html#//simplegeo/occ/instm/SGCommitLog/replay:">SGCommitLog::replay:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLocationService/nearby:" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Classes/SGLocationService/index.html#//simplegeo/occ/instm/SGLocationService/nearby:">SGLocationService::nearby:</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/isPoint" retarget="yes" target="_top" href="../Documentation/GeoJSON+NSDictionary_h/Categories/NSDictionary_GeoJSONObject_/index.html#//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/isPoint">NSDictionary(GeoJSONObject)::isPoint</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGCommitLog/startFlushTimer" retarget="yes" target="_top" href="../Documentation/SGCommitLog_h/Classes/SGCommitLog/index.html#//simplegeo/occ/instm/SGCommitLog/startFlushTimer">SGCommitLog::startFlushTimer</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLocationService/overlapsType:inPolygon:withLimit:" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Classes/SGLocationService/index.html#//simplegeo/occ/instm/SGLocationService/overlapsType:inPolygon:withLimit:">SGLocationService::overlapsType:inPolygon:withLimit:</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/isPolygon" retarget="yes" target="_top" href="../Documentation/GeoJSON+NSDictionary_h/Categories/NSDictionary_GeoJSONObject_/index.html#//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/isPolygon">NSDictionary(GeoJSONObject)::isPolygon</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGCommitLog/stopFlushTimer" retarget="yes" target="_top" href="../Documentation/SGCommitLog_h/Classes/SGCommitLog/index.html#//simplegeo/occ/instm/SGCommitLog/stopFlushTimer">SGCommitLog::stopFlushTimer</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLocationService/removeDelegate:" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Classes/SGLocationService/index.html#//simplegeo/occ/instm/SGLocationService/removeDelegate:">SGLocationService::removeDelegate:</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/properties" retarget="yes" target="_top" href="../Documentation/GeoJSON+NSDictionary_h/Categories/NSDictionary_GeoJSONObject_/index.html#//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/properties">NSDictionary(GeoJSONObject)::properties</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/intfm/SGCommitLogReplayDelegate/commitLog:replay:username:key:" retarget="yes" target="_top" href="../Documentation/SGCommitLog_h/Protocols/SGCommitLogReplayDelegate/index.html#//simplegeo/occ/intfm/SGCommitLogReplayDelegate/commitLog:replay:username:key:">SGCommitLogReplayDelegate::commitLog:replay:username:key:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLocationService/retrieveRecord:layer:" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Classes/SGLocationService/index.html#//simplegeo/occ/instm/SGLocationService/retrieveRecord:layer:">SGLocationService::retrieveRecord:layer:</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/type" retarget="yes" target="_top" href="../Documentation/GeoJSON+NSDictionary_h/Categories/NSDictionary_GeoJSONObject_/index.html#//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/type">NSDictionary(GeoJSONObject)::type</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/c/func/SGEnvelopeGetString" retarget="yes" target="_top" href="../Documentation/SGLocationTypes_h/index.html#//simplegeo/c/func/SGEnvelopeGetString">SGEnvelopeGetString</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLocationService/retrieveRecordAnnotation:" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Classes/SGLocationService/index.html#//simplegeo/occ/instm/SGLocationService/retrieveRecordAnnotation:">SGLocationService::retrieveRecordAnnotation:</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/NSDictionary(SGGeoJSONObject)/expires" retarget="yes" target="_top" href="../Documentation/SGGeoJSON+NSDictionary_h/Classes/NSDictionary_SGGeoJSONObject_/index.html#//simplegeo/occ/instm/NSDictionary(SGGeoJSONObject)/expires">NSDictionary(SGGeoJSONObject)::expires</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/c/func/SGEnvelopeMake" retarget="yes" target="_top" href="../Documentation/SGLocationTypes_h/index.html#//simplegeo/c/func/SGEnvelopeMake">SGEnvelopeMake</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLocationService/retrieveRecordAnnotations:" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Classes/SGLocationService/index.html#//simplegeo/occ/instm/SGLocationService/retrieveRecordAnnotations:">SGLocationService::retrieveRecordAnnotations:</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/NSMutableArray(GeoJSONObject)/setLatitude:" retarget="yes" target="_top" href="../Documentation/GeoJSON+NSArray_h/Categories/NSMutableArray_GeoJSONObject_/index.html#//simplegeo/occ/instm/NSMutableArray(GeoJSONObject)/setLatitude:">NSMutableArray(GeoJSONObject)::setLatitude:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/c/func/SGGeohashMake" retarget="yes" target="_top" href="../Documentation/SGLocationTypes_h/index.html#//simplegeo/c/func/SGGeohashMake">SGGeohashMake</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLocationService/reverseGeocode:" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Classes/SGLocationService/index.html#//simplegeo/occ/instm/SGLocationService/reverseGeocode:">SGLocationService::reverseGeocode:</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/NSMutableArray(GeoJSONObject)/setLongitude:" retarget="yes" target="_top" href="../Documentation/GeoJSON+NSArray_h/Categories/NSMutableArray_GeoJSONObject_/index.html#//simplegeo/occ/instm/NSMutableArray(GeoJSONObject)/setLongitude:">NSMutableArray(GeoJSONObject)::setLongitude:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/clm/SGGeoJSONEncoder/geoJSONObjectForRecordAnnotation:" retarget="yes" target="_top" href="../Documentation/SGGeoJSONEncoder_h/Classes/SGGeoJSONEncoder/index.html#//simplegeo/occ/clm/SGGeoJSONEncoder/geoJSONObjectForRecordAnnotation:">SGGeoJSONEncoder::geoJSONObjectForRecordAnnotation:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/clm/SGLocationService/sharedLocationService" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Classes/SGLocationService/index.html#//simplegeo/occ/clm/SGLocationService/sharedLocationService">SGLocationService::sharedLocationService</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/NSMutableArray(GeoJSONObject)/setX:" retarget="yes" target="_top" href="../Documentation/GeoJSON+NSArray_h/Categories/NSMutableArray_GeoJSONObject_/index.html#//simplegeo/occ/instm/NSMutableArray(GeoJSONObject)/setX:">NSMutableArray(GeoJSONObject)::setX:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/clm/SGGeoJSONEncoder/geoJSONObjectForRecordAnnotations:" retarget="yes" target="_top" href="../Documentation/SGGeoJSONEncoder_h/Classes/SGGeoJSONEncoder/index.html#//simplegeo/occ/clm/SGGeoJSONEncoder/geoJSONObjectForRecordAnnotations:">SGGeoJSONEncoder::geoJSONObjectForRecordAnnotations:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLocationService/startTrackingRecords" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Classes/SGLocationService/index.html#//simplegeo/occ/instm/SGLocationService/startTrackingRecords">SGLocationService::startTrackingRecords</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/NSMutableArray(GeoJSONObject)/setY:" retarget="yes" target="_top" href="../Documentation/GeoJSON+NSArray_h/Categories/NSMutableArray_GeoJSONObject_/index.html#//simplegeo/occ/instm/NSMutableArray(GeoJSONObject)/setY:">NSMutableArray(GeoJSONObject)::setY:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/clm/SGGeoJSONEncoder/layerNameFromLayerLink:" retarget="yes" target="_top" href="../Documentation/SGGeoJSONEncoder_h/Classes/SGGeoJSONEncoder/index.html#//simplegeo/occ/clm/SGGeoJSONEncoder/layerNameFromLayerLink:">SGGeoJSONEncoder::layerNameFromLayerLink:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLocationService/stopTrackingRecords" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Classes/SGLocationService/index.html#//simplegeo/occ/instm/SGLocationService/stopTrackingRecords">SGLocationService::stopTrackingRecords</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/NSMutableDictionary(GeoJSONObject)/addGeometry:" retarget="yes" target="_top" href="../Documentation/GeoJSON+NSDictionary_h/Categories/NSMutableDictionary_GeoJSONObject_/index.html#//simplegeo/occ/instm/NSMutableDictionary(GeoJSONObject)/addGeometry:">NSMutableDictionary(GeoJSONObject)::addGeometry:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/clm/SGGeoJSONEncoder/recordForGeoJSONObject:" retarget="yes" target="_top" href="../Documentation/SGGeoJSONEncoder_h/Classes/SGGeoJSONEncoder/index.html#//simplegeo/occ/clm/SGGeoJSONEncoder/recordForGeoJSONObject:">SGGeoJSONEncoder::recordForGeoJSONObject:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLocationService/updateRecord:layer:coord:properties:" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Classes/SGLocationService/index.html#//simplegeo/occ/instm/SGLocationService/updateRecord:layer:coord:properties:">SGLocationService::updateRecord:layer:coord:properties:</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/NSMutableDictionary(GeoJSONObject)/setCoordinates:" retarget="yes" target="_top" href="../Documentation/GeoJSON+NSDictionary_h/Categories/NSMutableDictionary_GeoJSONObject_/index.html#//simplegeo/occ/instm/NSMutableDictionary(GeoJSONObject)/setCoordinates:">NSMutableDictionary(GeoJSONObject)::setCoordinates:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/clm/SGGeoJSONEncoder/recordsForGeoJSONObject:" retarget="yes" target="_top" href="../Documentation/SGGeoJSONEncoder_h/Classes/SGGeoJSONEncoder/index.html#//simplegeo/occ/clm/SGGeoJSONEncoder/recordsForGeoJSONObject:">SGGeoJSONEncoder::recordsForGeoJSONObject:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLocationService/updateRecordAnnotation:" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Classes/SGLocationService/index.html#//simplegeo/occ/instm/SGLocationService/updateRecordAnnotation:">SGLocationService::updateRecordAnnotation:</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/NSMutableDictionary(GeoJSONObject)/setFeatures:" retarget="yes" target="_top" href="../Documentation/GeoJSON+NSDictionary_h/Categories/NSMutableDictionary_GeoJSONObject_/index.html#//simplegeo/occ/instm/NSMutableDictionary(GeoJSONObject)/setFeatures:">NSMutableDictionary(GeoJSONObject)::setFeatures:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/c/func/SGGeometryCollectionAppend" retarget="yes" target="_top" href="../Documentation/SGGeoJSON_h/index.html#//simplegeo/c/func/SGGeometryCollectionAppend">SGGeometryCollectionAppend</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLocationService/updateRecordAnnotations:" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Classes/SGLocationService/index.html#//simplegeo/occ/instm/SGLocationService/updateRecordAnnotations:">SGLocationService::updateRecordAnnotations:</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/NSMutableDictionary(GeoJSONObject)/setGeometries:" retarget="yes" target="_top" href="../Documentation/GeoJSON+NSDictionary_h/Categories/NSMutableDictionary_GeoJSONObject_/index.html#//simplegeo/occ/instm/NSMutableDictionary(GeoJSONObject)/setGeometries:">NSMutableDictionary(GeoJSONObject)::setGeometries:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/c/func/SGGeometryCollectionCreate" retarget="yes" target="_top" href="../Documentation/SGGeoJSON_h/index.html#//simplegeo/c/func/SGGeometryCollectionCreate">SGGeometryCollectionCreate</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLocationService/willBeTerminated" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Classes/SGLocationService/index.html#//simplegeo/occ/instm/SGLocationService/willBeTerminated">SGLocationService::willBeTerminated</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/NSMutableDictionary(GeoJSONObject)/setGeometry:" retarget="yes" target="_top" href="../Documentation/GeoJSON+NSDictionary_h/Categories/NSMutableDictionary_GeoJSONObject_/index.html#//simplegeo/occ/instm/NSMutableDictionary(GeoJSONObject)/setGeometry:">NSMutableDictionary(GeoJSONObject)::setGeometry:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/intfm/SGHistoricRecordAnnoation/history" retarget="yes" target="_top" href="../Documentation/SGRecordAnnotation_h/Protocols/SGHistoricRecordAnnoation/index.html#//simplegeo/occ/intfm/SGHistoricRecordAnnoation/history">SGHistoricRecordAnnoation::history</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/intfm/SGLocationServiceDelegate/locationService:failedForResponseId:error:" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Protocols/SGLocationServiceDelegate/index.html#//simplegeo/occ/intfm/SGLocationServiceDelegate/locationService:failedForResponseId:error:">SGLocationServiceDelegate::locationService:failedForResponseId:error:</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/NSMutableDictionary(GeoJSONObject)/setProperties:" retarget="yes" target="_top" href="../Documentation/GeoJSON+NSDictionary_h/Categories/NSMutableDictionary_GeoJSONObject_/index.html#//simplegeo/occ/instm/NSMutableDictionary(GeoJSONObject)/setProperties:">NSMutableDictionary(GeoJSONObject)::setProperties:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/intfm/SGHistoricRecordAnnoation/updateHistory:" retarget="yes" target="_top" href="../Documentation/SGRecordAnnotation_h/Protocols/SGHistoricRecordAnnoation/index.html#//simplegeo/occ/intfm/SGHistoricRecordAnnoation/updateHistory:">SGHistoricRecordAnnoation::updateHistory:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/intfm/SGLocationServiceDelegate/locationService:recordsForBackgroundLocationUpdate:" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Protocols/SGLocationServiceDelegate/index.html#//simplegeo/occ/intfm/SGLocationServiceDelegate/locationService:recordsForBackgroundLocationUpdate:">SGLocationServiceDelegate::locationService:recordsForBackgroundLocationUpdate:</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/NSMutableDictionary(GeoJSONObject)/setType:" retarget="yes" target="_top" href="../Documentation/GeoJSON+NSDictionary_h/Categories/NSMutableDictionary_GeoJSONObject_/index.html#//simplegeo/occ/instm/NSMutableDictionary(GeoJSONObject)/setType:">NSMutableDictionary(GeoJSONObject)::setType:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGHistoryQuery/initWithRecord:" retarget="yes" target="_top" href="../Documentation/SGHistoryQuery_h/Classes/SGHistoryQuery/index.html#//simplegeo/occ/instm/SGHistoryQuery/initWithRecord:">SGHistoryQuery::initWithRecord:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/intfm/SGLocationServiceDelegate/locationService:shouldCacheRecord:" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Protocols/SGLocationServiceDelegate/index.html#//simplegeo/occ/intfm/SGLocationServiceDelegate/locationService:shouldCacheRecord:">SGLocationServiceDelegate::locationService:shouldCacheRecord:</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/NSString(SimpleGeo)/minimalURLEncodedString" retarget="yes" target="_top" href="../Documentation/NSStringAdditions_h/Categories/NSString_SimpleGeo_/index.html#//simplegeo/occ/instm/NSString(SimpleGeo)/minimalURLEncodedString">NSString(SimpleGeo)::minimalURLEncodedString</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLayer/addRecordAnnotation:update:" retarget="yes" target="_top" href="../Documentation/SGLayer_h/Classes/SGLayer/index.html#//simplegeo/occ/instm/SGLayer/addRecordAnnotation:update:">SGLayer::addRecordAnnotation:update:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/intfm/SGLocationServiceDelegate/locationService:succeededForResponseId:responseObject:" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Protocols/SGLocationServiceDelegate/index.html#//simplegeo/occ/intfm/SGLocationServiceDelegate/locationService:succeededForResponseId:responseObject:">SGLocationServiceDelegate::locationService:succeededForResponseId:responseObject:</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/NSString(SimpleGeo)/URLDecodedString" retarget="yes" target="_top" href="../Documentation/NSStringAdditions_h/Categories/NSString_SimpleGeo_/index.html#//simplegeo/occ/instm/NSString(SimpleGeo)/URLDecodedString">NSString(SimpleGeo)::URLDecodedString</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLayer/addRecordAnnotations:update:" retarget="yes" target="_top" href="../Documentation/SGLayer_h/Classes/SGLayer/index.html#//simplegeo/occ/instm/SGLayer/addRecordAnnotations:update:">SGLayer::addRecordAnnotations:update:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGNearbyQuery/initWithLayer:" retarget="yes" target="_top" href="../Documentation/SGNearbyQuery_h/Classes/SGNearbyQuery/index.html#//simplegeo/occ/instm/SGNearbyQuery/initWithLayer:">SGNearbyQuery::initWithLayer:</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/NSString(SimpleGeo)/URLEncodedString" retarget="yes" target="_top" href="../Documentation/NSStringAdditions_h/Categories/NSString_SimpleGeo_/index.html#//simplegeo/occ/instm/NSString(SimpleGeo)/URLEncodedString">NSString(SimpleGeo)::URLEncodedString</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLayer/initWithLayerName:" retarget="yes" target="_top" href="../Documentation/SGLayer_h/Classes/SGLayer/index.html#//simplegeo/occ/instm/SGLayer/initWithLayerName:">SGLayer::initWithLayerName:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGOAuth/initWithKey:secret:" retarget="yes" target="_top" href="../Documentation/SGOAuth_h/Classes/SGOAuth/index.html#//simplegeo/occ/instm/SGOAuth/initWithKey:secret:">SGOAuth::initWithKey:secret:</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/c/instm/setCreated:" name="group___function_SE" retarget="yes" target="_top" href="../Documentation/SGGeoJSON+NSDictionary_h/index.html#//simplegeo/c/instm/setCreated:">setCreated:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLayer/nearby:" retarget="yes" target="_top" href="../Documentation/SGLayer_h/Classes/SGLayer/index.html#//simplegeo/occ/instm/SGLayer/nearby:">SGLayer::nearby:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/clm/SGOAuth/resume" retarget="yes" target="_top" href="../Documentation/SGOAuth_h/Classes/SGOAuth/index.html#//simplegeo/occ/clm/SGOAuth/resume">SGOAuth::resume</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/c/instm/setExpires:" retarget="yes" target="_top" href="../Documentation/SGGeoJSON+NSDictionary_h/index.html#//simplegeo/c/instm/setExpires:">setExpires:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLayer/nextNearby" retarget="yes" target="_top" href="../Documentation/SGLayer_h/Classes/SGLayer/index.html#//simplegeo/occ/instm/SGLayer/nextNearby">SGLayer::nextNearby</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGOAuth/save" retarget="yes" target="_top" href="../Documentation/SGOAuth_h/Classes/SGOAuth/index.html#//simplegeo/occ/instm/SGOAuth/save">SGOAuth::save</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/c/instm/setLayer:" retarget="yes" target="_top" href="../Documentation/SGGeoJSON+NSDictionary_h/index.html#//simplegeo/c/instm/setLayer:">setLayer:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLayer/recordAnnotationCount" retarget="yes" target="_top" href="../Documentation/SGLayer_h/Classes/SGLayer/index.html#//simplegeo/occ/instm/SGLayer/recordAnnotationCount">SGLayer::recordAnnotationCount</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGOAuth/unSave" retarget="yes" target="_top" href="../Documentation/SGOAuth_h/Classes/SGOAuth/index.html#//simplegeo/occ/instm/SGOAuth/unSave">SGOAuth::unSave</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/c/instm/setRecordId:" retarget="yes" target="_top" href="../Documentation/SGGeoJSON+NSDictionary_h/index.html#//simplegeo/c/instm/setRecordId:">setRecordId:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLayer/recordAnnotationFromGeoJSONObject:" retarget="yes" target="_top" href="../Documentation/SGLayer_h/Classes/SGLayer/index.html#//simplegeo/occ/instm/SGLayer/recordAnnotationFromGeoJSONObject:">SGLayer::recordAnnotationFromGeoJSONObject:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/c/func/SGPointCreate" retarget="yes" target="_top" href="../Documentation/SGGeoJSON_h/index.html#//simplegeo/c/func/SGPointCreate">SGPointCreate</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/intfm/SGAuthorization/dataAtURL:file:body:parameters:httpMethod:" name="group___function_SG" retarget="yes" target="_top" href="../Documentation/SGAuthorization_h/Protocols/SGAuthorization/index.html#//simplegeo/occ/intfm/SGAuthorization/dataAtURL:file:body:parameters:httpMethod:">SGAuthorization::dataAtURL:file:body:parameters:httpMethod:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLayer/recordAnnotations" retarget="yes" target="_top" href="../Documentation/SGLayer_h/Classes/SGLayer/index.html#//simplegeo/occ/instm/SGLayer/recordAnnotations">SGLayer::recordAnnotations</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/intfm/SGQuery/params" retarget="yes" target="_top" href="../Documentation/SGQuery_h/Protocols/SGQuery/index.html#//simplegeo/occ/intfm/SGQuery/params">SGQuery::params</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/intfm/SGAuthorization/username" retarget="yes" target="_top" href="../Documentation/SGAuthorization_h/Protocols/SGAuthorization/index.html#//simplegeo/occ/intfm/SGAuthorization/username">SGAuthorization::username</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLayer/removeAllRecordAnnotations:" retarget="yes" target="_top" href="../Documentation/SGLayer_h/Classes/SGLayer/index.html#//simplegeo/occ/instm/SGLayer/removeAllRecordAnnotations:">SGLayer::removeAllRecordAnnotations:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/intfm/SGQuery/uri" retarget="yes" target="_top" href="../Documentation/SGQuery_h/Protocols/SGQuery/index.html#//simplegeo/occ/intfm/SGQuery/uri">SGQuery::uri</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGCacheHandler/changeDirectory:" retarget="yes" target="_top" href="../Documentation/SGCacheHandler_h/Classes/SGCacheHandler/index.html#//simplegeo/occ/instm/SGCacheHandler/changeDirectory:">SGCacheHandler::changeDirectory:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLayer/removeRecordAnnotation:update:" retarget="yes" target="_top" href="../Documentation/SGLayer_h/Classes/SGLayer/index.html#//simplegeo/occ/instm/SGLayer/removeRecordAnnotation:update:">SGLayer::removeRecordAnnotation:update:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGRecord/updateCoordinate:" retarget="yes" target="_top" href="../Documentation/SGRecord_h/Classes/SGRecord/index.html#//simplegeo/occ/instm/SGRecord/updateCoordinate:">SGRecord::updateCoordinate:</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGCacheHandler/changeToParentDirectory" retarget="yes" target="_top" href="../Documentation/SGCacheHandler_h/Classes/SGCacheHandler/index.html#//simplegeo/occ/instm/SGCacheHandler/changeToParentDirectory">SGCacheHandler::changeToParentDirectory</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLayer/removeRecordAnnotations:update:" retarget="yes" target="_top" href="../Documentation/SGLayer_h/Classes/SGLayer/index.html#//simplegeo/occ/instm/SGLayer/removeRecordAnnotations:update:">SGLayer::removeRecordAnnotations:update:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGRecord/updateHistory:" retarget="yes" target="_top" href="../Documentation/SGRecord_h/Classes/SGRecord/index.html#//simplegeo/occ/instm/SGRecord/updateHistory:">SGRecord::updateHistory:</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGCacheHandler/changeToTopLevelPath" retarget="yes" target="_top" href="../Documentation/SGCacheHandler_h/Classes/SGCacheHandler/index.html#//simplegeo/occ/instm/SGCacheHandler/changeToTopLevelPath">SGCacheHandler::changeToTopLevelPath</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLayer/retrieveAllRecords" retarget="yes" target="_top" href="../Documentation/SGLayer_h/Classes/SGLayer/index.html#//simplegeo/occ/instm/SGLayer/retrieveAllRecords">SGLayer::retrieveAllRecords</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGRecord/updateRecordWithGeoJSONObject:" retarget="yes" target="_top" href="../Documentation/SGRecord_h/Classes/SGRecord/index.html#//simplegeo/occ/instm/SGRecord/updateRecordWithGeoJSONObject:">SGRecord::updateRecordWithGeoJSONObject:</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGCacheHandler/clearStaleCacheFiles" retarget="yes" target="_top" href="../Documentation/SGCacheHandler_h/Classes/SGCacheHandler/index.html#//simplegeo/occ/instm/SGCacheHandler/clearStaleCacheFiles">SGCacheHandler::clearStaleCacheFiles</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLayer/retrieveRecordAnnotations:" retarget="yes" target="_top" href="../Documentation/SGLayer_h/Classes/SGLayer/index.html#//simplegeo/occ/instm/SGLayer/retrieveRecordAnnotations:">SGLayer::retrieveRecordAnnotations:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/intfm/SGRecordAnnotation/created" retarget="yes" target="_top" href="../Documentation/SGRecordAnnotation_h/Protocols/SGRecordAnnotation/index.html#//simplegeo/occ/intfm/SGRecordAnnotation/created">SGRecordAnnotation::created</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGCacheHandler/deleteAllFiles" retarget="yes" target="_top" href="../Documentation/SGCacheHandler_h/Classes/SGCacheHandler/index.html#//simplegeo/occ/instm/SGCacheHandler/deleteAllFiles">SGCacheHandler::deleteAllFiles</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLayer/updateAllRecords" retarget="yes" target="_top" href="../Documentation/SGLayer_h/Classes/SGLayer/index.html#//simplegeo/occ/instm/SGLayer/updateAllRecords">SGLayer::updateAllRecords</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/intfm/SGRecordAnnotation/expires" retarget="yes" target="_top" href="../Documentation/SGRecordAnnotation_h/Protocols/SGRecordAnnotation/index.html#//simplegeo/occ/intfm/SGRecordAnnotation/expires">SGRecordAnnotation::expires</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGCacheHandler/deleteDirectory:" retarget="yes" target="_top" href="../Documentation/SGCacheHandler_h/Classes/SGCacheHandler/index.html#//simplegeo/occ/instm/SGCacheHandler/deleteDirectory:">SGCacheHandler::deleteDirectory:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLayer/updateRecordAnnotations:" retarget="yes" target="_top" href="../Documentation/SGLayer_h/Classes/SGLayer/index.html#//simplegeo/occ/instm/SGLayer/updateRecordAnnotations:">SGLayer::updateRecordAnnotations:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/intfm/SGRecordAnnotation/layer" retarget="yes" target="_top" href="../Documentation/SGRecordAnnotation_h/Protocols/SGRecordAnnotation/index.html#//simplegeo/occ/intfm/SGRecordAnnotation/layer">SGRecordAnnotation::layer</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGCacheHandler/getContentsOfFile:" retarget="yes" target="_top" href="../Documentation/SGCacheHandler_h/Classes/SGCacheHandler/index.html#//simplegeo/occ/instm/SGCacheHandler/getContentsOfFile:">SGCacheHandler::getContentsOfFile:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/intfm/SGLocationManagerDelegate/locationManager:didEnterRegions:" retarget="yes" target="_top" href="../Documentation/SGLocationManager_h/Protocols/SGLocationManagerDelegate/index.html#//simplegeo/occ/intfm/SGLocationManagerDelegate/locationManager:didEnterRegions:">SGLocationManagerDelegate::locationManager:didEnterRegions:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/intfm/SGRecordAnnotation/properties" retarget="yes" target="_top" href="../Documentation/SGRecordAnnotation_h/Protocols/SGRecordAnnotation/index.html#//simplegeo/occ/intfm/SGRecordAnnotation/properties">SGRecordAnnotation::properties</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGCacheHandler/getFiles" retarget="yes" target="_top" href="../Documentation/SGCacheHandler_h/Classes/SGCacheHandler/index.html#//simplegeo/occ/instm/SGCacheHandler/getFiles">SGCacheHandler::getFiles</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/intfm/SGLocationManagerDelegate/locationManager:didLeaveRegions:" retarget="yes" target="_top" href="../Documentation/SGLocationManager_h/Protocols/SGLocationManagerDelegate/index.html#//simplegeo/occ/intfm/SGLocationManagerDelegate/locationManager:didLeaveRegions:">SGLocationManagerDelegate::locationManager:didLeaveRegions:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/intfm/SGRecordAnnotation/recordId" retarget="yes" target="_top" href="../Documentation/SGRecordAnnotation_h/Protocols/SGRecordAnnotation/index.html#//simplegeo/occ/intfm/SGRecordAnnotation/recordId">SGRecordAnnotation::recordId</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGCacheHandler/initWithDirectory:" retarget="yes" target="_top" href="../Documentation/SGCacheHandler_h/Classes/SGCacheHandler/index.html#//simplegeo/occ/instm/SGCacheHandler/initWithDirectory:">SGCacheHandler::initWithDirectory:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLocationService/addDelegate:" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Classes/SGLocationService/index.html#//simplegeo/occ/instm/SGLocationService/addDelegate:">SGLocationService::addDelegate:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/intfm/SGRecordAnnotation/type" retarget="yes" target="_top" href="../Documentation/SGRecordAnnotation_h/Protocols/SGRecordAnnotation/index.html#//simplegeo/occ/intfm/SGRecordAnnotation/type">SGRecordAnnotation::type</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGCacheHandler/updateFile:withContents:" retarget="yes" target="_top" href="../Documentation/SGCacheHandler_h/Classes/SGCacheHandler/index.html#//simplegeo/occ/instm/SGCacheHandler/updateFile:withContents:">SGCacheHandler::updateFile:withContents:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLocationService/becameActive" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Classes/SGLocationService/index.html#//simplegeo/occ/instm/SGLocationService/becameActive">SGLocationService::becameActive</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/intfm/SGRecordAnnotation/updateRecordWithGeoJSONObject:" retarget="yes" target="_top" href="../Documentation/SGRecordAnnotation_h/Protocols/SGRecordAnnotation/index.html#//simplegeo/occ/intfm/SGRecordAnnotation/updateRecordWithGeoJSONObject:">SGRecordAnnotation::updateRecordWithGeoJSONObject:</a><br>
+</td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGCommitLog/addCommit:forUsername:andKey:" retarget="yes" target="_top" href="../Documentation/SGCommitLog_h/Classes/SGCommitLog/index.html#//simplegeo/occ/instm/SGCommitLog/addCommit:forUsername:andKey:">SGCommitLog::addCommit:forUsername:andKey:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGLocationService/boundary:" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Classes/SGLocationService/index.html#//simplegeo/occ/instm/SGLocationService/boundary:">SGLocationService::boundary:</a><br>
+</td>
+<td width="33%"></td>
+</tr>
+<tr>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/instm/SGCommitLog/addError:forUsername:andKey:" retarget="yes" target="_top" href="../Documentation/SGCommitLog_h/Classes/SGCommitLog/index.html#//simplegeo/occ/instm/SGCommitLog/addError:forUsername:andKey:">SGCommitLog::addError:forUsername:andKey:</a><br>
+</td>
+<td width="33%">
+<a logicalpath="//simplegeo/occ/clm/SGLocationService/callbackOnMainThread:" retarget="yes" target="_top" href="../Documentation/SGLocationService_h/Classes/SGLocationService/index.html#//simplegeo/occ/clm/SGLocationService/callbackOnMainThread:">SGLocationService::callbackOnMainThread:</a><br>
+</td>
+<td width="33%"></td>
+</tr>
+</table>
+</blockquote>
+
+        </td>
+    </tr>
+</table>
+</div>
+</center>
+</body>
+</html>

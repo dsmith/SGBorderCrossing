@@ -1,0 +1,362 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html>
+<head>
+<title>NSDictionary(GeoJSONObject)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta name="generator" content="HeaderDoc">
+<meta name="xcode-display" content="render">
+<style><!--
+#tocMenu {
+		display: block;
+		position:fixed;
+		top:0px;
+		left:0px;
+		width:210px;
+		height:100%;
+		background:transparent;
+}
+#bodyText {
+		margin-left: 210px;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+function hidetoc() {
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var toc = document.getElementById('tocMenu');
+		var body = document.getElementById('bodyText');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+--></script><style type="text/css"><!--.keyword {background:#ffffff; color:#761550;}.template {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.function {background:#ffffff; color:#000000;}.string {background: #ffffff; color:#891315;}.preprocessor {background:#ffffff; color:#236e25}.comment {background:#ffffff; color:#236e25}.char {background: #ffffff; color:#0000ff;}.var {background:#ffffff; color:#000000;}.type {background:#ffffff; color:#761550;}.param {background:#ffffff; color:#000000;}a:link {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:active {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}h4 {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: tiny; font-weight: bold;}body {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: 10pt;}.list_indent { margin-left: 40px; }.declaration_indent { margin-left: 40px; }.param_indent { margin-left: 40px; }.group_indent { margin-left: 40px; }.group_desc_indent { margin-left: 20px; }.warning_indent { margin-left: 40px; }.important_indent { margin-left: 40px; }.hd_tocAccess { font-style: italic; font-size: 10px; font-weight: normal; color: #303030; }--></style>
+</head>
+<body bgcolor="#ffffff" onload="hidetoc();">
+
+<!-- headerDoc=cat; uid=//simplegeo/occ/cat/NSDictionary(GeoJSONObject);  name=NSDictionary(GeoJSONObject)-->
+<a name="//simplegeo/occ/cat/NSDictionary(GeoJSONObject)"></a><div id="tocMenu">
+<iframe id="toc_content" name="toc_content" src="toc.html" width="210" height="100%" align="left" frameborder="0">This document set is best viewed in a browser that supports iFrames.</iframe>
+</div>
+<div id="bodyText">
+<!-- start of header -->
+
+<!-- end of header -->
+<a name="top"></a>
+<hr>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h1><a name="NSDictionary(GeoJSONObject)">NSDictionary(GeoJSONObject)</a></h1>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>Ease the pain of accessing SimpleGeo GeoJSON values.
+<!-- end abstract --></p>
+<p><b>Extends&nbsp;Class:</b> <!-- a logicalPath="//simplegeo/occ/cl/NSDictionary" -->NSDictionary<!-- /a --><br><b>Declared In:</b> <a href="../../index.html" target="_top">GeoJSON+NSDictionary.h</a><br></p>
+<div class="declaration_indent">
+</div>
+<p></p>
+<hr>
+<br><a name="HeaderDoc_methods"></a>
+<h2>Methods</h2>
+<dl>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/coordinates" target="_top">-coordinates</a></tt></dt>
+<dd><p>Returns the GeoJSONObject associated with the key coordinates. &#65532;
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/doc/title:instm/NSDictionary(GeoJSONObject)/Determines" target="_top">-Determines</a></tt></dt>
+<dd></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/features" target="_top">-features</a></tt></dt>
+<dd><p>Returns the GeoJSONObject associated with the key features.
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/geometries" target="_top">-geometries</a></tt></dt>
+<dd><p>Returns the GeoJSONObject associated with the key geometries.
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/geometry" target="_top">-geometry</a></tt></dt>
+<dd><p>Returns the GeoJSONObject associated with the key at geometry. &#65532;
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/isFeature" target="_top">-isFeature</a></tt></dt>
+<dd><p>Determines whether this GeoJSON object is a feature. 
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/isFeatureCollection" target="_top">-isFeatureCollection</a></tt></dt>
+<dd><p>Determines whether this GeoJSON object is a collection
+of features.&#65532;
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/isGeometryCollection" target="_top">-isGeometryCollection</a></tt></dt>
+<dd></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/isMultiPolygon" target="_top">-isMultiPolygon</a></tt></dt>
+<dd><p>Determines whether this GeoJSON object is a multipolygon. &#65532;
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/isPoint" target="_top">-isPoint</a></tt></dt>
+<dd><p>Determines whether this GeoJSON object is a point. &#65532;
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/isPolygon" target="_top">-isPolygon</a></tt></dt>
+<dd><p>Determines whether this GeoJSON object is a polygon. &#65532;
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/properties" target="_top">-properties</a></tt></dt>
+<dd><p>Returns the GeoJSONObject associated with the key properties.
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/type" target="_top">-type</a></tt></dt>
+<dd><p>Retrieves the type value for this GeoJSONObject. &#65532;
+</p></dd>
+</dl>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/coordinates;   name=NSDictionary(GeoJSONObject)::coordinates --><a name="//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/coordinates"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="coordinates">coordinates</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>Returns the GeoJSONObject associated with the key coordinates. &#65532;
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/NSArray //simplegeo/occ/tdef/NSArray //simplegeo/occ/tag/NSArray //simplegeo/occ/econst/NSArray //simplegeo/occ/struct/NSArray //simplegeo/occ/clconst/NSArray //simplegeo/occ/intf/NSArray" --><span class="type">NSArray</span><!-- /a --><span class="type">*</span>) <!-- a logicalPath="//simplegeo/occ/econst/coordinates //simplegeo/occ/data/coordinates" --><span class="var">coordinates</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value -->&#65532;The coordinates GeoJSONObject.
+
+<!-- end return value --></p>
+<p></p>
+<hr>
+<!-- headerDoc=title:instm;  uid=//simplegeo/doc/title:instm/NSDictionary(GeoJSONObject)/Determines;   name=NSDictionary(GeoJSONObject)::Determines --><a name="//simplegeo/doc/title:instm/NSDictionary(GeoJSONObject)/Determines"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="Determines">Determines</a></h3>
+</td></tr></table>
+<hr>
+<p></p>
+<b>See Also:</b><div class="list_indent"><dl>
+<dt>
+<a href="../../../../Documentation/GeoJSON+NSDictionary_h/Categories/NSDictionary_GeoJSONObject_/index.html#//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/isGeometryCollection" logicalPath="//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/isGeometryCollection"><p>isGeometryCollection</p></a>
+</dt>
+<dd></dd>
+</dl></div>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/BOOL //simplegeo/occ/tdef/BOOL //simplegeo/occ/tag/BOOL //simplegeo/occ/econst/BOOL //simplegeo/occ/struct/BOOL //simplegeo/occ/clconst/BOOL //simplegeo/occ/intf/BOOL" --><span class="type">BOOL</span><!-- /a -->) <!-- a logicalPath="//simplegeo/occ/econst/isGeometryCollection //simplegeo/occ/data/isGeometryCollection" --><span class="var">isGeometryCollection</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value -->YES if the object is a collection of geometries; otherwise NO.
+
+<!-- end return value --></p>
+<h5 class="tight">
+<font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5>
+<!-- begin discussion --><p>whether this GeoJSON object is a geometry collection.</p>
+<!-- end discussion -->
+<p></p>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/features;   name=NSDictionary(GeoJSONObject)::features --><a name="//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/features"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="features">features</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>Returns the GeoJSONObject associated with the key features.
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/NSArray //simplegeo/occ/tdef/NSArray //simplegeo/occ/tag/NSArray //simplegeo/occ/econst/NSArray //simplegeo/occ/struct/NSArray //simplegeo/occ/clconst/NSArray //simplegeo/occ/intf/NSArray" --><span class="type">NSArray</span><!-- /a --><span class="type">*</span>) <!-- a logicalPath="//simplegeo/occ/econst/features //simplegeo/occ/data/features" --><span class="var">features</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value -->&#65532;The features GeoJSONObject.
+
+<!-- end return value --></p>
+<p></p>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/geometries;   name=NSDictionary(GeoJSONObject)::geometries --><a name="//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/geometries"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="geometries">geometries</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>Returns the GeoJSONObject associated with the key geometries.
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/NSArray //simplegeo/occ/tdef/NSArray //simplegeo/occ/tag/NSArray //simplegeo/occ/econst/NSArray //simplegeo/occ/struct/NSArray //simplegeo/occ/clconst/NSArray //simplegeo/occ/intf/NSArray" --><span class="type">NSArray</span><!-- /a --><span class="type">*</span>) <!-- a logicalPath="//simplegeo/occ/econst/geometries //simplegeo/occ/data/geometries" --><span class="var">geometries</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value -->&#65532;The geometries GeoJSONObject.
+
+<!-- end return value --></p>
+<p></p>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/geometry;   name=NSDictionary(GeoJSONObject)::geometry --><a name="//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/geometry"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="geometry">geometry</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>Returns the GeoJSONObject associated with the key at geometry. &#65532;
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/NSDictionary //simplegeo/occ/tdef/NSDictionary //simplegeo/occ/tag/NSDictionary //simplegeo/occ/econst/NSDictionary //simplegeo/occ/struct/NSDictionary //simplegeo/occ/clconst/NSDictionary //simplegeo/occ/intf/NSDictionary" --><span class="type">NSDictionary</span><!-- /a --><span class="type">*</span>) <!-- a logicalPath="//simplegeo/occ/econst/geometry //simplegeo/occ/data/geometry" --><span class="var">geometry</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value -->&#65532;The geometry GeoJSONObject.
+
+<!-- end return value --></p>
+<p></p>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/isFeature;   name=NSDictionary(GeoJSONObject)::isFeature --><a name="//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/isFeature"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="isFeature">isFeature</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>Determines whether this GeoJSON object is a feature. 
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/BOOL //simplegeo/occ/tdef/BOOL //simplegeo/occ/tag/BOOL //simplegeo/occ/econst/BOOL //simplegeo/occ/struct/BOOL //simplegeo/occ/clconst/BOOL //simplegeo/occ/intf/BOOL" --><span class="type">BOOL</span><!-- /a -->) <!-- a logicalPath="//simplegeo/occ/econst/isFeature //simplegeo/occ/data/isFeature" --><span class="var">isFeature</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value -->YES if the object is a feature; otherwise NO.
+
+<!-- end return value --></p>
+<p></p>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/isFeatureCollection;   name=NSDictionary(GeoJSONObject)::isFeatureCollection --><a name="//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/isFeatureCollection"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="isFeatureCollection">isFeatureCollection</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>Determines whether this GeoJSON object is a collection
+of features.&#65532;
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/BOOL //simplegeo/occ/tdef/BOOL //simplegeo/occ/tag/BOOL //simplegeo/occ/econst/BOOL //simplegeo/occ/struct/BOOL //simplegeo/occ/clconst/BOOL //simplegeo/occ/intf/BOOL" --><span class="type">BOOL</span><!-- /a -->) <!-- a logicalPath="//simplegeo/occ/econst/isFeatureCollection //simplegeo/occ/data/isFeatureCollection" --><span class="var">isFeatureCollection</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value -->&#65532;YES if the object is a collection of features; otherwise
+NO.
+
+<!-- end return value --></p>
+<p></p>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/isGeometryCollection;   name=NSDictionary(GeoJSONObject)::isGeometryCollection --><a name="//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/isGeometryCollection"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="isGeometryCollection">isGeometryCollection</a></h3>
+</td></tr></table>
+<hr>
+<p></p>
+<b>See Also:</b><div class="list_indent"><dl>
+<dt>
+<a href="../../../../Documentation/GeoJSON+NSDictionary_h/Categories/NSDictionary_GeoJSONObject_/index.html#//simplegeo/doc/title:instm/NSDictionary(GeoJSONObject)/Determines" logicalPath="//simplegeo/doc/title:instm/NSDictionary(GeoJSONObject)/Determines"><p>Determines</p></a>
+</dt>
+<dd></dd>
+</dl></div>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/BOOL //simplegeo/occ/tdef/BOOL //simplegeo/occ/tag/BOOL //simplegeo/occ/econst/BOOL //simplegeo/occ/struct/BOOL //simplegeo/occ/clconst/BOOL //simplegeo/occ/intf/BOOL" --><span class="type">BOOL</span><!-- /a -->) <!-- a logicalPath="//simplegeo/occ/econst/isGeometryCollection //simplegeo/occ/data/isGeometryCollection" --><span class="var">isGeometryCollection</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight">
+<font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5>
+<!-- begin discussion --><p>whether this GeoJSON object is a geometry collection.</p>
+<!-- end discussion -->
+<p></p>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/isMultiPolygon;   name=NSDictionary(GeoJSONObject)::isMultiPolygon --><a name="//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/isMultiPolygon"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="isMultiPolygon">isMultiPolygon</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>Determines whether this GeoJSON object is a multipolygon. &#65532;
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/BOOL //simplegeo/occ/tdef/BOOL //simplegeo/occ/tag/BOOL //simplegeo/occ/econst/BOOL //simplegeo/occ/struct/BOOL //simplegeo/occ/clconst/BOOL //simplegeo/occ/intf/BOOL" --><span class="type">BOOL</span><!-- /a -->) <!-- a logicalPath="//simplegeo/occ/econst/isMultiPolygon //simplegeo/occ/data/isMultiPolygon" --><span class="var">isMultiPolygon</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value -->&#65532;YES if the object is a multipolygon; otherwise NO.
+
+<!-- end return value --></p>
+<p></p>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/isPoint;   name=NSDictionary(GeoJSONObject)::isPoint --><a name="//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/isPoint"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="isPoint">isPoint</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>Determines whether this GeoJSON object is a point. &#65532;
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/BOOL //simplegeo/occ/tdef/BOOL //simplegeo/occ/tag/BOOL //simplegeo/occ/econst/BOOL //simplegeo/occ/struct/BOOL //simplegeo/occ/clconst/BOOL //simplegeo/occ/intf/BOOL" --><span class="type">BOOL</span><!-- /a -->) <!-- a logicalPath="//simplegeo/occ/econst/isPoint //simplegeo/occ/data/isPoint" --><span class="var">isPoint</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value -->&#65532;YES if the object is a point; otherwise NO.
+
+<!-- end return value --></p>
+<p></p>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/isPolygon;   name=NSDictionary(GeoJSONObject)::isPolygon --><a name="//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/isPolygon"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="isPolygon">isPolygon</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>Determines whether this GeoJSON object is a polygon. &#65532;
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/BOOL //simplegeo/occ/tdef/BOOL //simplegeo/occ/tag/BOOL //simplegeo/occ/econst/BOOL //simplegeo/occ/struct/BOOL //simplegeo/occ/clconst/BOOL //simplegeo/occ/intf/BOOL" --><span class="type">BOOL</span><!-- /a -->) <!-- a logicalPath="//simplegeo/occ/econst/isPolygon //simplegeo/occ/data/isPolygon" --><span class="var">isPolygon</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value -->&#65532;YES if the object is a polygon; otherwise NO.
+
+<!-- end return value --></p>
+<p></p>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/properties;   name=NSDictionary(GeoJSONObject)::properties --><a name="//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/properties"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="properties">properties</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>Returns the GeoJSONObject associated with the key properties.
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/NSDictionary //simplegeo/occ/tdef/NSDictionary //simplegeo/occ/tag/NSDictionary //simplegeo/occ/econst/NSDictionary //simplegeo/occ/struct/NSDictionary //simplegeo/occ/clconst/NSDictionary //simplegeo/occ/intf/NSDictionary" --><span class="type">NSDictionary</span><!-- /a --><span class="type">*</span>) <!-- a logicalPath="//simplegeo/occ/econst/properties //simplegeo/occ/data/properties" --><span class="var">properties</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value -->&#65532;The properties GeoJSONObject.
+
+<!-- end return value --></p>
+<p></p>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/type;   name=NSDictionary(GeoJSONObject)::type --><a name="//simplegeo/occ/instm/NSDictionary(GeoJSONObject)/type"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="type">type</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>Retrieves the type value for this GeoJSONObject. &#65532;
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/NSString //simplegeo/occ/tdef/NSString //simplegeo/occ/tag/NSString //simplegeo/occ/econst/NSString //simplegeo/occ/struct/NSString //simplegeo/occ/clconst/NSString //simplegeo/occ/intf/NSString" --><span class="type">NSString</span><!-- /a --><span class="type">*</span>) <!-- a logicalPath="//simplegeo/occ/econst/type //simplegeo/occ/data/type" --><span class="var">type</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value -->The type value for the object.
+
+<!-- end return value --></p>
+<p></p>
+<p><!-- start of footer -->
+
+<!-- end of footer -->
+</p>
+<p>&copy; SimpleGeo Last Updated: 08/20/2010
+</p>
+</div>
+</body>
+</html>
