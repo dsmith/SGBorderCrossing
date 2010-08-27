@@ -1,0 +1,269 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html>
+<head>
+<title>SGRecordLine</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta name="generator" content="HeaderDoc">
+<meta name="xcode-display" content="render">
+<style><!--
+#tocMenu {
+		display: block;
+		position:fixed;
+		top:0px;
+		left:0px;
+		width:210px;
+		height:100%;
+		background:transparent;
+}
+#bodyText {
+		margin-left: 210px;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+function hidetoc() {
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var toc = document.getElementById('tocMenu');
+		var body = document.getElementById('bodyText');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+--></script><style type="text/css"><!--.keyword {background:#ffffff; color:#761550;}.template {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.function {background:#ffffff; color:#000000;}.string {background: #ffffff; color:#891315;}.preprocessor {background:#ffffff; color:#236e25}.comment {background:#ffffff; color:#236e25}.char {background: #ffffff; color:#0000ff;}.var {background:#ffffff; color:#000000;}.type {background:#ffffff; color:#761550;}.param {background:#ffffff; color:#000000;}a:link {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:active {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}h4 {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: tiny; font-weight: bold;}body {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: 10pt;}.list_indent { margin-left: 40px; }.declaration_indent { margin-left: 40px; }.param_indent { margin-left: 40px; }.group_indent { margin-left: 40px; }.group_desc_indent { margin-left: 20px; }.warning_indent { margin-left: 40px; }.important_indent { margin-left: 40px; }.hd_tocAccess { font-style: italic; font-size: 10px; font-weight: normal; color: #303030; }--></style>
+</head>
+<body bgcolor="#ffffff" onload="hidetoc();">
+
+<!-- headerDoc=cl; uid=//simplegeo/occ/cl/SGRecordLine;  name=SGRecordLine-->
+<a name="//simplegeo/occ/cl/SGRecordLine"></a><div id="tocMenu">
+<iframe id="toc_content" name="toc_content" src="toc.html" width="210" height="100%" align="left" frameborder="0">This document set is best viewed in a browser that supports iFrames.</iframe>
+</div>
+<div id="bodyText">
+<!-- start of header -->
+
+<!-- end of header -->
+<a name="top"></a>
+<hr>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h1><a name="SGRecordLine">SGRecordLine</a></h1>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>Generates points from a
+<!-- a logicalPath="//simplegeo/ooc/cl/SGHistoricRecordAnnotation" -->SGHistoricRecordAnnotation<!-- /a -->
+which can be used for dispaly in a MKMapView.
+<!-- end abstract --></p>
+<p><b>Conforms&nbsp;to:</b> <!-- a logicalPath="//simplegeo/occ/intf/MKOverlay" -->MKOverlay<!-- /a --><br><b>Superclass:</b> <!-- a logicalPath="//simplegeo/occ/cl/NSObject" -->NSObject<!-- /a --><br><b>Declared In:</b> <a href="../../index.html" target="_top">SGRecordLine.h</a><br></p>
+<div class="declaration_indent">
+</div>
+<p></p>
+<hr>
+<br><a name="HeaderDoc_methods"></a>
+<h2>Methods</h2>
+<dl>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/SGRecordLine/addCoordinate:" target="_top">-addCoordinate:</a></tt></dt>
+<dd><p>&#65532;Adds a coordinate to the line.
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/SGRecordLine/addCoordinates:count:" target="_top">-addCoordinates:count:</a></tt></dt>
+<dd><p>&#65532;Addes a set of coordinates to the line.
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/SGRecordLine/initWithRecordAnnoation:" target="_top">-initWithRecordAnnoation:</a></tt></dt>
+<dd><p>&#65532;
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/SGRecordLine/lock" target="_top">-lock</a></tt></dt>
+<dd><p>&#65532;Lock for reading
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/SGRecordLine/reloadAnnotation" target="_top">-reloadAnnotation</a></tt></dt>
+<dd><p>&#65532;Reloads all <a href="../../../../Documentation/SGRecordLine_h/Classes/SGRecordLine/index.html#//simplegeo/occ/instp/SGRecordLine/points" logicalPath="//simplegeo/occ/instp/SGRecordLine/points">points</a>  from the
+<a href="../../../../Documentation/SGRecordLine_h/Classes/SGRecordLine/index.html#//simplegeo/occ/instp/SGRecordLine/recordAnnotation" logicalPath="//simplegeo/occ/instp/SGRecordLine/recordAnnotation">recordAnnotation</a> .
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instm/SGRecordLine/unlock" target="_top">-unlock</a></tt></dt>
+<dd><p>Unlock from reading
+</p></dd>
+</dl>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/SGRecordLine/addCoordinate:;   name=SGRecordLine::addCoordinate: --><a name="//simplegeo/occ/instm/SGRecordLine/addCoordinate:"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="addCoordinate:">addCoordinate:</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>&#65532;Adds a coordinate to the line.
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/MKMapRect //simplegeo/occ/tdef/MKMapRect //simplegeo/occ/tag/MKMapRect //simplegeo/occ/econst/MKMapRect //simplegeo/occ/struct/MKMapRect //simplegeo/occ/clconst/MKMapRect //simplegeo/occ/intf/MKMapRect" --><span class="type">MKMapRect</span><!-- /a -->) <!-- a logicalPath="//simplegeo/occ/instm/addCoordinate //simplegeo/occ/clm/addCoordinate //simplegeo/occ/intfcm/addCoordinate //simplegeo/occ/intfm/addCoordinate //simplegeo/occ/func/addCoordinate //simplegeo/occ/ftmplt/addCoordinate //simplegeo/occ/defn/addCoordinate //simplegeo/occ/macro/addCoordinate" --><span class="function">addCoordinate</span><!-- /a -->:(<!-- a logicalPath="//simplegeo/occ/cl/CLLocationCoordinate2D //simplegeo/occ/tdef/CLLocationCoordinate2D //simplegeo/occ/tag/CLLocationCoordinate2D //simplegeo/occ/econst/CLLocationCoordinate2D //simplegeo/occ/struct/CLLocationCoordinate2D //simplegeo/occ/clconst/CLLocationCoordinate2D //simplegeo/occ/intf/CLLocationCoordinate2D" --><span class="type">CLLocationCoordinate2D</span><!-- /a -->)<!-- a logicalPath="//simplegeo/occ/econst/coord //simplegeo/occ/data/coord" --><span class="var">coord</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt><code>coord</code></dt>
+<dd><p>&#65532;</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value -->&#65532;
+
+<!-- end return value --></p>
+<p></p>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/SGRecordLine/addCoordinates:count:;   name=SGRecordLine::addCoordinates:count: --><a name="//simplegeo/occ/instm/SGRecordLine/addCoordinates:count:"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="addCoordinates:count:">addCoordinates:count:</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>&#65532;Addes a set of coordinates to the line.
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/MKMapRect //simplegeo/occ/tdef/MKMapRect //simplegeo/occ/tag/MKMapRect //simplegeo/occ/econst/MKMapRect //simplegeo/occ/struct/MKMapRect //simplegeo/occ/clconst/MKMapRect //simplegeo/occ/intf/MKMapRect" --><span class="type">MKMapRect</span><!-- /a -->) <!-- a logicalPath="//simplegeo/occ/instm/addCoordinates //simplegeo/occ/clm/addCoordinates //simplegeo/occ/intfcm/addCoordinates //simplegeo/occ/intfm/addCoordinates //simplegeo/occ/func/addCoordinates //simplegeo/occ/ftmplt/addCoordinates //simplegeo/occ/defn/addCoordinates //simplegeo/occ/macro/addCoordinates" --><span class="function">addCoordinates</span><!-- /a -->:(<!-- a logicalPath="//simplegeo/occ/cl/CLLocationCoordinate2D //simplegeo/occ/tdef/CLLocationCoordinate2D //simplegeo/occ/tag/CLLocationCoordinate2D //simplegeo/occ/econst/CLLocationCoordinate2D //simplegeo/occ/struct/CLLocationCoordinate2D //simplegeo/occ/clconst/CLLocationCoordinate2D //simplegeo/occ/intf/CLLocationCoordinate2D" --><span class="type">CLLocationCoordinate2D</span><!-- /a --><span class="type">*</span>)<span class="param">coords</span> 
+        <!-- a logicalPath="//simplegeo/occ/instm/count //simplegeo/occ/clm/count //simplegeo/occ/intfcm/count //simplegeo/occ/intfm/count //simplegeo/occ/func/count //simplegeo/occ/ftmplt/count //simplegeo/occ/defn/count //simplegeo/occ/macro/count" --><span class="function">count</span><!-- /a -->:(<!-- a logicalPath="//simplegeo/occ/cl/int //simplegeo/occ/tdef/int //simplegeo/occ/tag/int //simplegeo/occ/econst/int //simplegeo/occ/struct/int //simplegeo/occ/clconst/int //simplegeo/occ/intf/int" --><span class="type">int</span><!-- /a -->)<!-- a logicalPath="//simplegeo/occ/econst/count //simplegeo/occ/data/count" --><span class="var">count</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt><code>coords</code></dt>
+<dd><p>&#65532;</p></dd>
+<dt><code>count</code></dt>
+<dd><p>&#65532;</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value -->&#65532;
+
+<!-- end return value --></p>
+<p></p>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/SGRecordLine/initWithRecordAnnoation:;   name=SGRecordLine::initWithRecordAnnoation: --><a name="//simplegeo/occ/instm/SGRecordLine/initWithRecordAnnoation:"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="initWithRecordAnnoation:">initWithRecordAnnoation:</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>&#65532;
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/id //simplegeo/occ/tdef/id //simplegeo/occ/tag/id //simplegeo/occ/econst/id //simplegeo/occ/struct/id //simplegeo/occ/clconst/id //simplegeo/occ/intf/id" --><span class="type">id</span><!-- /a -->) <!-- a logicalPath="//simplegeo/occ/instm/initWithRecordAnnoation //simplegeo/occ/clm/initWithRecordAnnoation //simplegeo/occ/intfcm/initWithRecordAnnoation //simplegeo/occ/intfm/initWithRecordAnnoation //simplegeo/occ/func/initWithRecordAnnoation //simplegeo/occ/ftmplt/initWithRecordAnnoation //simplegeo/occ/defn/initWithRecordAnnoation //simplegeo/occ/macro/initWithRecordAnnoation" --><span class="function">initWithRecordAnnoation</span><!-- /a -->:(<!-- a logicalPath="//simplegeo/occ/cl/id //simplegeo/occ/tdef/id //simplegeo/occ/tag/id //simplegeo/occ/econst/id //simplegeo/occ/struct/id //simplegeo/occ/clconst/id //simplegeo/occ/intf/id" --><span class="type">id</span><!-- /a -->&lt;<span class="param">SGHistoricRecordAnnoation</span>&gt;)<!-- a logicalPath="//simplegeo/occ/econst/annotation //simplegeo/occ/data/annotation" --><span class="var">annotation</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class="param_indent">
+<dl>
+<dt><code>annotation</code></dt>
+<dd><p>&#65532;</p></dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
+<p><!-- begin return value -->&#65532;
+
+<!-- end return value --></p>
+<p></p>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/SGRecordLine/lock;   name=SGRecordLine::lock --><a name="//simplegeo/occ/instm/SGRecordLine/lock"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="lock">lock</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>&#65532;Lock for reading
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/void //simplegeo/occ/tdef/void //simplegeo/occ/tag/void //simplegeo/occ/econst/void //simplegeo/occ/struct/void //simplegeo/occ/clconst/void //simplegeo/occ/intf/void" --><span class="type">void</span><!-- /a -->) <!-- a logicalPath="//simplegeo/occ/econst/lock //simplegeo/occ/data/lock" --><span class="var">lock</span><!-- /a -->; </pre>
+</div>
+<p></p>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/SGRecordLine/reloadAnnotation;   name=SGRecordLine::reloadAnnotation --><a name="//simplegeo/occ/instm/SGRecordLine/reloadAnnotation"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="reloadAnnotation">reloadAnnotation</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>&#65532;Reloads all <a href="../../../../Documentation/SGRecordLine_h/Classes/SGRecordLine/index.html#//simplegeo/occ/instp/SGRecordLine/points" logicalPath="//simplegeo/occ/instp/SGRecordLine/points">points</a>  from the
+<a href="../../../../Documentation/SGRecordLine_h/Classes/SGRecordLine/index.html#//simplegeo/occ/instp/SGRecordLine/recordAnnotation" logicalPath="//simplegeo/occ/instp/SGRecordLine/recordAnnotation">recordAnnotation</a>.
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/void //simplegeo/occ/tdef/void //simplegeo/occ/tag/void //simplegeo/occ/econst/void //simplegeo/occ/struct/void //simplegeo/occ/clconst/void //simplegeo/occ/intf/void" --><span class="type">void</span><!-- /a -->) <!-- a logicalPath="//simplegeo/occ/econst/reloadAnnotation //simplegeo/occ/data/reloadAnnotation" --><span class="var">reloadAnnotation</span><!-- /a -->; </pre>
+</div>
+<p></p>
+<hr>
+<!-- headerDoc=instm;  uid=//simplegeo/occ/instm/SGRecordLine/unlock;   name=SGRecordLine::unlock --><a name="//simplegeo/occ/instm/SGRecordLine/unlock"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="unlock">unlock</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>Unlock from reading
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>- (<!-- a logicalPath="//simplegeo/occ/cl/void //simplegeo/occ/tdef/void //simplegeo/occ/tag/void //simplegeo/occ/econst/void //simplegeo/occ/struct/void //simplegeo/occ/clconst/void //simplegeo/occ/intf/void" --><span class="type">void</span><!-- /a -->) <!-- a logicalPath="//simplegeo/occ/econst/unlock //simplegeo/occ/data/unlock" --><span class="var">unlock</span><!-- /a -->; </pre>
+</div>
+<p></p>
+<a name="HeaderDoc_props"></a>
+<h2>Properties</h2>
+<dl>
+<dt><tt><a href="index.html#//simplegeo/occ/instp/SGRecordLine/pointCount" target="_top">pointCount</a></tt></dt>
+<dd><p>The number of points
+</p></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instp/SGRecordLine/points" target="_top">points</a></tt></dt>
+<dd></dd>
+<dt><tt><a href="index.html#//simplegeo/occ/instp/SGRecordLine/recordAnnotation" target="_top">recordAnnotation</a></tt></dt>
+<dd></dd>
+</dl>
+<hr>
+<!-- headerDoc=instp;  uid=//simplegeo/occ/instp/SGRecordLine/pointCount;   name=SGRecordLine::pointCount --><a name="//simplegeo/occ/instp/SGRecordLine/pointCount"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="pointCount">pointCount</a></h3>
+</td></tr></table>
+<hr>
+<p><!-- begin abstract --></p>
+<p>The number of points
+<!-- end abstract --></p>
+<p></p>
+<div class="declaration_indent">
+<pre>@property (
+    <span class="param">readonly</span>) <!-- a logicalPath="//simplegeo/occ/cl/NSUInteger //simplegeo/occ/tdef/NSUInteger //simplegeo/occ/tag/NSUInteger //simplegeo/occ/econst/NSUInteger //simplegeo/occ/struct/NSUInteger //simplegeo/occ/clconst/NSUInteger //simplegeo/occ/intf/NSUInteger" --><span class="type">NSUInteger</span><!-- /a --> <!-- a logicalPath="//simplegeo/occ/econst/pointCount //simplegeo/occ/data/pointCount" --><span class="var">pointCount</span><!-- /a -->; </pre>
+</div>
+<p></p>
+<hr>
+<!-- headerDoc=instp;  uid=//simplegeo/occ/instp/SGRecordLine/points;   name=SGRecordLine::points --><a name="//simplegeo/occ/instp/SGRecordLine/points"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="points">points</a></h3>
+</td></tr></table>
+<hr>
+<p></p>
+<div class="declaration_indent">
+<pre>@property (
+    <span class="param">readonly</span>) <!-- a logicalPath="//simplegeo/occ/cl/MKMapPoint //simplegeo/occ/tdef/MKMapPoint //simplegeo/occ/tag/MKMapPoint //simplegeo/occ/econst/MKMapPoint //simplegeo/occ/struct/MKMapPoint //simplegeo/occ/clconst/MKMapPoint //simplegeo/occ/intf/MKMapPoint" --><span class="type">MKMapPoint</span><!-- /a --><span class="type">*</span> <!-- a logicalPath="//simplegeo/occ/econst/points //simplegeo/occ/data/points" --><span class="var">points</span><!-- /a -->; </pre>
+</div>
+<p></p>
+<hr>
+<!-- headerDoc=instp;  uid=//simplegeo/occ/instp/SGRecordLine/recordAnnotation;   name=SGRecordLine::recordAnnotation --><a name="//simplegeo/occ/instp/SGRecordLine/recordAnnotation"></a>
+<table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="recordAnnotation">recordAnnotation</a></h3>
+</td></tr></table>
+<hr>
+<p></p>
+<div class="declaration_indent">
+<pre>@property (
+    <span class="param">nonatomic</span>,
+    <span class="param">readonly</span>) <!-- a logicalPath="//simplegeo/occ/cl/id //simplegeo/occ/tdef/id //simplegeo/occ/tag/id //simplegeo/occ/econst/id //simplegeo/occ/struct/id //simplegeo/occ/clconst/id //simplegeo/occ/intf/id" --><span class="type">id</span><!-- /a -->&lt;<span class="template">SGHistoricRecordAnnoation</span>&gt; <!-- a logicalPath="//simplegeo/occ/econst/recordAnnotation //simplegeo/occ/data/recordAnnotation" --><span class="var">recordAnnotation</span><!-- /a -->; </pre>
+</div>
+<p></p>
+<p><!-- start of footer -->
+
+<!-- end of footer -->
+</p>
+<p>&copy; SimpleGeo Last Updated: 08/27/2010
+</p>
+</div>
+</body>
+</html>
