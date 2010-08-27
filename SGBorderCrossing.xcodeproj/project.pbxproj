@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,18 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4A64662C12286614008B1339 /* CLLocationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLocationAdditions.h; sourceTree = "<group>"; };
+		4A64662D12286614008B1339 /* SGDynamicPolylineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGDynamicPolylineView.h; sourceTree = "<group>"; };
+		4A64662E12286614008B1339 /* SGLayerMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGLayerMapView.h; sourceTree = "<group>"; };
+		4A64662F12286614008B1339 /* SGMapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGMapKit.h; sourceTree = "<group>"; };
+		4A64663012286614008B1339 /* SGMapRectHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGMapRectHelper.h; sourceTree = "<group>"; };
+		4A64663112286614008B1339 /* SGPointHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGPointHelper.h; sourceTree = "<group>"; };
+		4A64663212286614008B1339 /* SGRecordLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGRecordLine.h; sourceTree = "<group>"; };
+		4A64663312286614008B1339 /* SGRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGRegion.h; sourceTree = "<group>"; };
+		4A64663512286614008B1339 /* libSGMapKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSGMapKit.a; sourceTree = "<group>"; };
+		4A64663712286614008B1339 /* libSGMapKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSGMapKit.a; sourceTree = "<group>"; };
+		4A64663812286614008B1339 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		4A64663912286614008B1339 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		4A705ED9121F198200B3D330 /* SGBorderCrossing-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "SGBorderCrossing-Info.plist"; path = "Resources/SGBorderCrossing-Info.plist"; sourceTree = "<group>"; };
 		4A705EDA121F198200B3D330 /* SGBorderCrossing_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SGBorderCrossing_Prefix.pch; path = Resources/SGBorderCrossing_Prefix.pch; sourceTree = "<group>"; };
 		4A705EDB121F198200B3D330 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainWindow.xib; path = Resources/MainWindow.xib; sourceTree = "<group>"; };
@@ -123,9 +135,53 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4A64660012286614008B1339 /* SGMapKit */ = {
+			isa = PBXGroup;
+			children = (
+				4A64662B12286614008B1339 /* Headers */,
+				4A64663412286614008B1339 /* iphoneos */,
+				4A64663612286614008B1339 /* iphonesimulator */,
+				4A64663812286614008B1339 /* LICENSE */,
+				4A64663912286614008B1339 /* README */,
+			);
+			path = SGMapKit;
+			sourceTree = "<group>";
+		};
+		4A64662B12286614008B1339 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				4A64662C12286614008B1339 /* CLLocationAdditions.h */,
+				4A64662D12286614008B1339 /* SGDynamicPolylineView.h */,
+				4A64662E12286614008B1339 /* SGLayerMapView.h */,
+				4A64662F12286614008B1339 /* SGMapKit.h */,
+				4A64663012286614008B1339 /* SGMapRectHelper.h */,
+				4A64663112286614008B1339 /* SGPointHelper.h */,
+				4A64663212286614008B1339 /* SGRecordLine.h */,
+				4A64663312286614008B1339 /* SGRegion.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		4A64663412286614008B1339 /* iphoneos */ = {
+			isa = PBXGroup;
+			children = (
+				4A64663512286614008B1339 /* libSGMapKit.a */,
+			);
+			path = iphoneos;
+			sourceTree = "<group>";
+		};
+		4A64663612286614008B1339 /* iphonesimulator */ = {
+			isa = PBXGroup;
+			children = (
+				4A64663712286614008B1339 /* libSGMapKit.a */,
+			);
+			path = iphonesimulator;
+			sourceTree = "<group>";
+		};
 		4A705EF1121F1B6C00B3D330 /* SGiPhoneSDK */ = {
 			isa = PBXGroup;
 			children = (
+				4A64660012286614008B1339 /* SGMapKit */,
 				4A705EF2121F1B6C00B3D330 /* SGClient */,
 			);
 			path = SGiPhoneSDK;
@@ -214,8 +270,11 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = SimpleGeo;
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SGBorderCrossing" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 1;
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
@@ -264,12 +323,16 @@
 					"SGiPhoneSDK/SGClient/$(PLATFORM_NAME)",
 					"\"$(SRCROOT)/SGiPhoneSDK/SGClient/iphoneos\"",
 					"\"$(SRCROOT)/SGiPhoneSDK/SGClient/iphonesimulator\"",
+					"\"$(SRCROOT)/SGiPhoneSDK/SGMapKit/iphoneos\"",
+					"\"$(SRCROOT)/SGiPhoneSDK/SGMapKit/iphonesimulator\"",
 				);
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
 					"-l",
 					SGClient,
+					"-l",
+					SGMapKit,
 				);
 				PRODUCT_NAME = SGBorderCrossing;
 			};
@@ -287,6 +350,8 @@
 					"SGiPhoneSDK/SGClient/$(PLATFORM_NAME)",
 					"\"$(SRCROOT)/SGiPhoneSDK/SGClient/iphoneos\"",
 					"\"$(SRCROOT)/SGiPhoneSDK/SGClient/iphonesimulator\"",
+					"\"$(SRCROOT)/SGiPhoneSDK/SGMapKit/iphoneos\"",
+					"\"$(SRCROOT)/SGiPhoneSDK/SGMapKit/iphonesimulator\"",
 				);
 				OTHER_LDFLAGS = (
 					"-all_load",
