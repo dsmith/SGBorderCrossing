@@ -34,8 +34,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SGBorderCrossingAppDelegate : NSObject <UIApplicationDelegate> {
+@interface SGBorderCrossingAppDelegate : NSObject <UIApplicationDelegate, SGLocationManagerDelegate> {
     UIWindow *window;
+    
+    SGLocationManager* locationManager;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
