@@ -12,6 +12,12 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		4A64665F12286C53008B1339 /* Token.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A64665E12286C53008B1339 /* Token.plist */; };
+		4A64666E12286CFF008B1339 /* SGMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A64666D12286CFF008B1339 /* SGMainViewController.m */; };
+		4A6466A51228733A008B1339 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A6466A41228733A008B1339 /* MapKit.framework */; };
+		4A647E1D1229C7A0008B1339 /* LocateMe.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A647E1C1229C7A0008B1339 /* LocateMe.png */; };
+		4A6490E7122B6D45008B1339 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A6490E5122B6D45008B1339 /* iTunesArtwork.png */; };
+		4A6490E8122B6D45008B1339 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A6490E6122B6D45008B1339 /* Icon.png */; };
 		4A705EDD121F198200B3D330 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A705EDB121F198200B3D330 /* MainWindow.xib */; };
 		4A70602C121F1BB400B3D330 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A70602B121F1BB400B3D330 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
@@ -20,52 +26,55 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* SGBorderCrossingAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGBorderCrossingAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* SGBorderCrossingAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGBorderCrossingAppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* SGBorderCrossing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SGBorderCrossing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* BorderXing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BorderXing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4A64662C12286614008B1339 /* CLLocationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLocationAdditions.h; sourceTree = "<group>"; };
-		4A64662D12286614008B1339 /* SGDynamicPolylineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGDynamicPolylineView.h; sourceTree = "<group>"; };
-		4A64662E12286614008B1339 /* SGLayerMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGLayerMapView.h; sourceTree = "<group>"; };
-		4A64662F12286614008B1339 /* SGMapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGMapKit.h; sourceTree = "<group>"; };
-		4A64663012286614008B1339 /* SGMapRectHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGMapRectHelper.h; sourceTree = "<group>"; };
-		4A64663112286614008B1339 /* SGPointHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGPointHelper.h; sourceTree = "<group>"; };
-		4A64663212286614008B1339 /* SGRecordLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGRecordLine.h; sourceTree = "<group>"; };
-		4A64663312286614008B1339 /* SGRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGRegion.h; sourceTree = "<group>"; };
-		4A64663512286614008B1339 /* libSGMapKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSGMapKit.a; sourceTree = "<group>"; };
-		4A64663712286614008B1339 /* libSGMapKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSGMapKit.a; sourceTree = "<group>"; };
-		4A64663812286614008B1339 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		4A64663912286614008B1339 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		4A64665E12286C53008B1339 /* Token.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Token.plist; path = Resources/Token.plist; sourceTree = "<group>"; };
+		4A64666C12286CFF008B1339 /* SGMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGMainViewController.h; sourceTree = "<group>"; };
+		4A64666D12286CFF008B1339 /* SGMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGMainViewController.m; sourceTree = "<group>"; };
+		4A6466A41228733A008B1339 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4A647E1C1229C7A0008B1339 /* LocateMe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LocateMe.png; sourceTree = "<group>"; };
+		4A648F7B122B6C75008B1339 /* CLLocationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLocationAdditions.h; sourceTree = "<group>"; };
+		4A648F7C122B6C75008B1339 /* SGDynamicPolylineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGDynamicPolylineView.h; sourceTree = "<group>"; };
+		4A648F7D122B6C75008B1339 /* SGLayerMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGLayerMapView.h; sourceTree = "<group>"; };
+		4A648F7E122B6C75008B1339 /* SGMapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGMapKit.h; sourceTree = "<group>"; };
+		4A648F7F122B6C75008B1339 /* SGMapRectHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGMapRectHelper.h; sourceTree = "<group>"; };
+		4A648F80122B6C75008B1339 /* SGPointHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGPointHelper.h; sourceTree = "<group>"; };
+		4A648F81122B6C75008B1339 /* SGRecordLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGRecordLine.h; sourceTree = "<group>"; };
+		4A648F82122B6C75008B1339 /* SGRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGRegion.h; sourceTree = "<group>"; };
+		4A648F84122B6C75008B1339 /* libSGMapKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSGMapKit.a; sourceTree = "<group>"; };
+		4A648F86122B6C75008B1339 /* libSGMapKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSGMapKit.a; sourceTree = "<group>"; };
+		4A64903A122B6C75008B1339 /* GeoJSON+NSArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoJSON+NSArray.h"; sourceTree = "<group>"; };
+		4A64903B122B6C75008B1339 /* GeoJSON+NSDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoJSON+NSDictionary.h"; sourceTree = "<group>"; };
+		4A64903C122B6C75008B1339 /* NSStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringAdditions.h; sourceTree = "<group>"; };
+		4A64903D122B6C75008B1339 /* SGAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGAdditions.h; sourceTree = "<group>"; };
+		4A64903E122B6C75008B1339 /* SGAuthorization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGAuthorization.h; sourceTree = "<group>"; };
+		4A64903F122B6C75008B1339 /* SGCacheHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGCacheHandler.h; sourceTree = "<group>"; };
+		4A649040122B6C75008B1339 /* SGClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGClient.h; sourceTree = "<group>"; };
+		4A649041122B6C75008B1339 /* SGCommitLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGCommitLog.h; sourceTree = "<group>"; };
+		4A649042122B6C75008B1339 /* SGGeohashNearbyQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGGeohashNearbyQuery.h; sourceTree = "<group>"; };
+		4A649043122B6C75008B1339 /* SGGeoJSON+NSDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SGGeoJSON+NSDictionary.h"; sourceTree = "<group>"; };
+		4A649044122B6C75008B1339 /* SGGeoJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGGeoJSON.h; sourceTree = "<group>"; };
+		4A649045122B6C75008B1339 /* SGGeoJSONEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGGeoJSONEncoder.h; sourceTree = "<group>"; };
+		4A649046122B6C75008B1339 /* SGHistoryQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHistoryQuery.h; sourceTree = "<group>"; };
+		4A649047122B6C75008B1339 /* SGLatLonNearbyQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGLatLonNearbyQuery.h; sourceTree = "<group>"; };
+		4A649048122B6C75008B1339 /* SGLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGLayer.h; sourceTree = "<group>"; };
+		4A649049122B6C75008B1339 /* SGLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGLocationManager.h; sourceTree = "<group>"; };
+		4A64904A122B6C75008B1339 /* SGLocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGLocationService.h; sourceTree = "<group>"; };
+		4A64904B122B6C75008B1339 /* SGLocationTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGLocationTypes.h; sourceTree = "<group>"; };
+		4A64904C122B6C75008B1339 /* SGNearbyQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGNearbyQuery.h; sourceTree = "<group>"; };
+		4A64904D122B6C75008B1339 /* SGOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGOAuth.h; sourceTree = "<group>"; };
+		4A64904E122B6C75008B1339 /* SGQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQuery.h; sourceTree = "<group>"; };
+		4A64904F122B6C75008B1339 /* SGRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGRecord.h; sourceTree = "<group>"; };
+		4A649050122B6C75008B1339 /* SGRecordAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGRecordAnnotation.h; sourceTree = "<group>"; };
+		4A649052122B6C75008B1339 /* libSGClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSGClient.a; sourceTree = "<group>"; };
+		4A649054122B6C75008B1339 /* libSGClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSGClient.a; sourceTree = "<group>"; };
+		4A6490E5122B6D45008B1339 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iTunesArtwork.png; path = Resources/iTunesArtwork.png; sourceTree = "<group>"; };
+		4A6490E6122B6D45008B1339 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Resources/Icon.png; sourceTree = "<group>"; };
 		4A705ED9121F198200B3D330 /* SGBorderCrossing-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "SGBorderCrossing-Info.plist"; path = "Resources/SGBorderCrossing-Info.plist"; sourceTree = "<group>"; };
 		4A705EDA121F198200B3D330 /* SGBorderCrossing_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SGBorderCrossing_Prefix.pch; path = Resources/SGBorderCrossing_Prefix.pch; sourceTree = "<group>"; };
 		4A705EDB121F198200B3D330 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainWindow.xib; path = Resources/MainWindow.xib; sourceTree = "<group>"; };
-		4A705FA3121F1B6C00B3D330 /* GeoJSON+NSArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoJSON+NSArray.h"; sourceTree = "<group>"; };
-		4A705FA4121F1B6C00B3D330 /* GeoJSON+NSDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoJSON+NSDictionary.h"; sourceTree = "<group>"; };
-		4A705FA5121F1B6C00B3D330 /* NSStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringAdditions.h; sourceTree = "<group>"; };
-		4A705FA6121F1B6C00B3D330 /* SGAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGAdditions.h; sourceTree = "<group>"; };
-		4A705FA7121F1B6C00B3D330 /* SGAuthorization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGAuthorization.h; sourceTree = "<group>"; };
-		4A705FA8121F1B6C00B3D330 /* SGCacheHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGCacheHandler.h; sourceTree = "<group>"; };
-		4A705FA9121F1B6C00B3D330 /* SGClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGClient.h; sourceTree = "<group>"; };
-		4A705FAA121F1B6C00B3D330 /* SGCommitLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGCommitLog.h; sourceTree = "<group>"; };
-		4A705FAB121F1B6C00B3D330 /* SGGeohashNearbyQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGGeohashNearbyQuery.h; sourceTree = "<group>"; };
-		4A705FAC121F1B6C00B3D330 /* SGGeoJSON+NSDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SGGeoJSON+NSDictionary.h"; sourceTree = "<group>"; };
-		4A705FAD121F1B6C00B3D330 /* SGGeoJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGGeoJSON.h; sourceTree = "<group>"; };
-		4A705FAE121F1B6C00B3D330 /* SGGeoJSONEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGGeoJSONEncoder.h; sourceTree = "<group>"; };
-		4A705FAF121F1B6C00B3D330 /* SGHistoryQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHistoryQuery.h; sourceTree = "<group>"; };
-		4A705FB0121F1B6C00B3D330 /* SGLatLonNearbyQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGLatLonNearbyQuery.h; sourceTree = "<group>"; };
-		4A705FB1121F1B6C00B3D330 /* SGLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGLayer.h; sourceTree = "<group>"; };
-		4A705FB2121F1B6C00B3D330 /* SGLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGLocationManager.h; sourceTree = "<group>"; };
-		4A705FB3121F1B6C00B3D330 /* SGLocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGLocationService.h; sourceTree = "<group>"; };
-		4A705FB4121F1B6C00B3D330 /* SGLocationTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGLocationTypes.h; sourceTree = "<group>"; };
-		4A705FB5121F1B6C00B3D330 /* SGNearbyQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGNearbyQuery.h; sourceTree = "<group>"; };
-		4A705FB6121F1B6C00B3D330 /* SGOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGOAuth.h; sourceTree = "<group>"; };
-		4A705FB7121F1B6C00B3D330 /* SGQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQuery.h; sourceTree = "<group>"; };
-		4A705FB8121F1B6C00B3D330 /* SGRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGRecord.h; sourceTree = "<group>"; };
-		4A705FB9121F1B6C00B3D330 /* SGRecordAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGRecordAnnotation.h; sourceTree = "<group>"; };
-		4A705FBB121F1B6C00B3D330 /* libSGClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSGClient.a; sourceTree = "<group>"; };
-		4A705FBD121F1B6C00B3D330 /* libSGClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSGClient.a; sourceTree = "<group>"; };
-		4A705FBE121F1B6C00B3D330 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		4A705FBF121F1B6C00B3D330 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		4A70602B121F1BB400B3D330 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -78,6 +87,7 @@
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				4A70602C121F1BB400B3D330 /* CoreLocation.framework in Frameworks */,
+				4A6466A51228733A008B1339 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +99,8 @@
 			children = (
 				1D3623240D0F684500981E51 /* SGBorderCrossingAppDelegate.h */,
 				1D3623250D0F684500981E51 /* SGBorderCrossingAppDelegate.m */,
+				4A64666C12286CFF008B1339 /* SGMainViewController.h */,
+				4A64666D12286CFF008B1339 /* SGMainViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -96,7 +108,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* SGBorderCrossing.app */,
+				1D6058910D05DD3D006BFB54 /* BorderXing.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,7 +122,6 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				4A70602B121F1BB400B3D330 /* CoreLocation.framework */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -118,6 +129,10 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4A6490E5122B6D45008B1339 /* iTunesArtwork.png */,
+				4A6490E6122B6D45008B1339 /* Icon.png */,
+				4A647E1B1229C7A0008B1339 /* Images */,
+				4A64665E12286C53008B1339 /* Token.plist */,
 				4A705ED9121F198200B3D330 /* SGBorderCrossing-Info.plist */,
 				4A705EDA121F198200B3D330 /* SGBorderCrossing_Prefix.pch */,
 				4A705EDB121F198200B3D330 /* MainWindow.xib */,
@@ -128,6 +143,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4A6466A41228733A008B1339 /* MapKit.framework */,
+				4A70602B121F1BB400B3D330 /* CoreLocation.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
@@ -135,45 +152,108 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4A64660012286614008B1339 /* SGMapKit */ = {
+		4A647E1B1229C7A0008B1339 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				4A64662B12286614008B1339 /* Headers */,
-				4A64663412286614008B1339 /* iphoneos */,
-				4A64663612286614008B1339 /* iphonesimulator */,
-				4A64663812286614008B1339 /* LICENSE */,
-				4A64663912286614008B1339 /* README */,
+				4A647E1C1229C7A0008B1339 /* LocateMe.png */,
+			);
+			name = Images;
+			path = Resources/Images;
+			sourceTree = "<group>";
+		};
+		4A648F4F122B6C75008B1339 /* SGMapKit */ = {
+			isa = PBXGroup;
+			children = (
+				4A648F7A122B6C75008B1339 /* Headers */,
+				4A648F83122B6C75008B1339 /* iphoneos */,
+				4A648F85122B6C75008B1339 /* iphonesimulator */,
 			);
 			path = SGMapKit;
 			sourceTree = "<group>";
 		};
-		4A64662B12286614008B1339 /* Headers */ = {
+		4A648F7A122B6C75008B1339 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				4A64662C12286614008B1339 /* CLLocationAdditions.h */,
-				4A64662D12286614008B1339 /* SGDynamicPolylineView.h */,
-				4A64662E12286614008B1339 /* SGLayerMapView.h */,
-				4A64662F12286614008B1339 /* SGMapKit.h */,
-				4A64663012286614008B1339 /* SGMapRectHelper.h */,
-				4A64663112286614008B1339 /* SGPointHelper.h */,
-				4A64663212286614008B1339 /* SGRecordLine.h */,
-				4A64663312286614008B1339 /* SGRegion.h */,
+				4A648F7B122B6C75008B1339 /* CLLocationAdditions.h */,
+				4A648F7C122B6C75008B1339 /* SGDynamicPolylineView.h */,
+				4A648F7D122B6C75008B1339 /* SGLayerMapView.h */,
+				4A648F7E122B6C75008B1339 /* SGMapKit.h */,
+				4A648F7F122B6C75008B1339 /* SGMapRectHelper.h */,
+				4A648F80122B6C75008B1339 /* SGPointHelper.h */,
+				4A648F81122B6C75008B1339 /* SGRecordLine.h */,
+				4A648F82122B6C75008B1339 /* SGRegion.h */,
 			);
 			path = Headers;
 			sourceTree = "<group>";
 		};
-		4A64663412286614008B1339 /* iphoneos */ = {
+		4A648F83122B6C75008B1339 /* iphoneos */ = {
 			isa = PBXGroup;
 			children = (
-				4A64663512286614008B1339 /* libSGMapKit.a */,
+				4A648F84122B6C75008B1339 /* libSGMapKit.a */,
 			);
 			path = iphoneos;
 			sourceTree = "<group>";
 		};
-		4A64663612286614008B1339 /* iphonesimulator */ = {
+		4A648F85122B6C75008B1339 /* iphonesimulator */ = {
 			isa = PBXGroup;
 			children = (
-				4A64663712286614008B1339 /* libSGMapKit.a */,
+				4A648F86122B6C75008B1339 /* libSGMapKit.a */,
+			);
+			path = iphonesimulator;
+			sourceTree = "<group>";
+		};
+		4A648F89122B6C75008B1339 /* SGClient */ = {
+			isa = PBXGroup;
+			children = (
+				4A649039122B6C75008B1339 /* Headers */,
+				4A649051122B6C75008B1339 /* iphoneos */,
+				4A649053122B6C75008B1339 /* iphonesimulator */,
+			);
+			path = SGClient;
+			sourceTree = "<group>";
+		};
+		4A649039122B6C75008B1339 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				4A64903A122B6C75008B1339 /* GeoJSON+NSArray.h */,
+				4A64903B122B6C75008B1339 /* GeoJSON+NSDictionary.h */,
+				4A64903C122B6C75008B1339 /* NSStringAdditions.h */,
+				4A64903D122B6C75008B1339 /* SGAdditions.h */,
+				4A64903E122B6C75008B1339 /* SGAuthorization.h */,
+				4A64903F122B6C75008B1339 /* SGCacheHandler.h */,
+				4A649040122B6C75008B1339 /* SGClient.h */,
+				4A649041122B6C75008B1339 /* SGCommitLog.h */,
+				4A649042122B6C75008B1339 /* SGGeohashNearbyQuery.h */,
+				4A649043122B6C75008B1339 /* SGGeoJSON+NSDictionary.h */,
+				4A649044122B6C75008B1339 /* SGGeoJSON.h */,
+				4A649045122B6C75008B1339 /* SGGeoJSONEncoder.h */,
+				4A649046122B6C75008B1339 /* SGHistoryQuery.h */,
+				4A649047122B6C75008B1339 /* SGLatLonNearbyQuery.h */,
+				4A649048122B6C75008B1339 /* SGLayer.h */,
+				4A649049122B6C75008B1339 /* SGLocationManager.h */,
+				4A64904A122B6C75008B1339 /* SGLocationService.h */,
+				4A64904B122B6C75008B1339 /* SGLocationTypes.h */,
+				4A64904C122B6C75008B1339 /* SGNearbyQuery.h */,
+				4A64904D122B6C75008B1339 /* SGOAuth.h */,
+				4A64904E122B6C75008B1339 /* SGQuery.h */,
+				4A64904F122B6C75008B1339 /* SGRecord.h */,
+				4A649050122B6C75008B1339 /* SGRecordAnnotation.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		4A649051122B6C75008B1339 /* iphoneos */ = {
+			isa = PBXGroup;
+			children = (
+				4A649052122B6C75008B1339 /* libSGClient.a */,
+			);
+			path = iphoneos;
+			sourceTree = "<group>";
+		};
+		4A649053122B6C75008B1339 /* iphonesimulator */ = {
+			isa = PBXGroup;
+			children = (
+				4A649054122B6C75008B1339 /* libSGClient.a */,
 			);
 			path = iphonesimulator;
 			sourceTree = "<group>";
@@ -181,68 +261,10 @@
 		4A705EF1121F1B6C00B3D330 /* SGiPhoneSDK */ = {
 			isa = PBXGroup;
 			children = (
-				4A64660012286614008B1339 /* SGMapKit */,
-				4A705EF2121F1B6C00B3D330 /* SGClient */,
+				4A648F4F122B6C75008B1339 /* SGMapKit */,
+				4A648F89122B6C75008B1339 /* SGClient */,
 			);
 			path = SGiPhoneSDK;
-			sourceTree = "<group>";
-		};
-		4A705EF2121F1B6C00B3D330 /* SGClient */ = {
-			isa = PBXGroup;
-			children = (
-				4A705FA2121F1B6C00B3D330 /* Headers */,
-				4A705FBA121F1B6C00B3D330 /* iphoneos */,
-				4A705FBC121F1B6C00B3D330 /* iphonesimulator */,
-				4A705FBE121F1B6C00B3D330 /* LICENSE */,
-				4A705FBF121F1B6C00B3D330 /* README */,
-			);
-			path = SGClient;
-			sourceTree = "<group>";
-		};
-		4A705FA2121F1B6C00B3D330 /* Headers */ = {
-			isa = PBXGroup;
-			children = (
-				4A705FA3121F1B6C00B3D330 /* GeoJSON+NSArray.h */,
-				4A705FA4121F1B6C00B3D330 /* GeoJSON+NSDictionary.h */,
-				4A705FA5121F1B6C00B3D330 /* NSStringAdditions.h */,
-				4A705FA6121F1B6C00B3D330 /* SGAdditions.h */,
-				4A705FA7121F1B6C00B3D330 /* SGAuthorization.h */,
-				4A705FA8121F1B6C00B3D330 /* SGCacheHandler.h */,
-				4A705FA9121F1B6C00B3D330 /* SGClient.h */,
-				4A705FAA121F1B6C00B3D330 /* SGCommitLog.h */,
-				4A705FAB121F1B6C00B3D330 /* SGGeohashNearbyQuery.h */,
-				4A705FAC121F1B6C00B3D330 /* SGGeoJSON+NSDictionary.h */,
-				4A705FAD121F1B6C00B3D330 /* SGGeoJSON.h */,
-				4A705FAE121F1B6C00B3D330 /* SGGeoJSONEncoder.h */,
-				4A705FAF121F1B6C00B3D330 /* SGHistoryQuery.h */,
-				4A705FB0121F1B6C00B3D330 /* SGLatLonNearbyQuery.h */,
-				4A705FB1121F1B6C00B3D330 /* SGLayer.h */,
-				4A705FB2121F1B6C00B3D330 /* SGLocationManager.h */,
-				4A705FB3121F1B6C00B3D330 /* SGLocationService.h */,
-				4A705FB4121F1B6C00B3D330 /* SGLocationTypes.h */,
-				4A705FB5121F1B6C00B3D330 /* SGNearbyQuery.h */,
-				4A705FB6121F1B6C00B3D330 /* SGOAuth.h */,
-				4A705FB7121F1B6C00B3D330 /* SGQuery.h */,
-				4A705FB8121F1B6C00B3D330 /* SGRecord.h */,
-				4A705FB9121F1B6C00B3D330 /* SGRecordAnnotation.h */,
-			);
-			path = Headers;
-			sourceTree = "<group>";
-		};
-		4A705FBA121F1B6C00B3D330 /* iphoneos */ = {
-			isa = PBXGroup;
-			children = (
-				4A705FBB121F1B6C00B3D330 /* libSGClient.a */,
-			);
-			path = iphoneos;
-			sourceTree = "<group>";
-		};
-		4A705FBC121F1B6C00B3D330 /* iphonesimulator */ = {
-			isa = PBXGroup;
-			children = (
-				4A705FBD121F1B6C00B3D330 /* libSGClient.a */,
-			);
-			path = iphonesimulator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +284,7 @@
 			);
 			name = SGBorderCrossing;
 			productName = SGBorderCrossing;
-			productReference = 1D6058910D05DD3D006BFB54 /* SGBorderCrossing.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* BorderXing.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -291,6 +313,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A705EDD121F198200B3D330 /* MainWindow.xib in Resources */,
+				4A64665F12286C53008B1339 /* Token.plist in Resources */,
+				4A647E1D1229C7A0008B1339 /* LocateMe.png in Resources */,
+				4A6490E7122B6D45008B1339 /* iTunesArtwork.png in Resources */,
+				4A6490E8122B6D45008B1339 /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +329,7 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* SGBorderCrossingAppDelegate.m in Sources */,
+				4A64666E12286CFF008B1339 /* SGMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,11 +347,34 @@
 				GCC_PREFIX_HEADER = Resources/SGBorderCrossing_Prefix.pch;
 				INFOPLIST_FILE = "Resources/SGBorderCrossing-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
-					"SGiPhoneSDK/SGClient/$(PLATFORM_NAME)",
-					"\"$(SRCROOT)/SGiPhoneSDK/SGClient/iphoneos\"",
-					"\"$(SRCROOT)/SGiPhoneSDK/SGClient/iphonesimulator\"",
-					"\"$(SRCROOT)/SGiPhoneSDK/SGMapKit/iphoneos\"",
+					"\"$(SRCROOT)/SGiPhoneSDK/SGClient/$(PLATFORM_NAME)\"",
+					"\"$(SRCROOT)/SGiPhoneSDK/SGMapKit/$(PLATFORM_NAME)\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGMapKit/build/Debug-iphonesimulator\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGMapKit/build/Release-iphonesimulator\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGMapKit/Resources/3rd-Party/SGClient/build/Release-iphoneos\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGMapKit/Resources/3rd-Party/SGClient/build/Release-iphonesimulator\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGMapKit/Resources/3rd-Party/SGClient/build/SGClient.build/Release-iphoneos/SGClient.build/Objects-normal/armv6\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGMapKit/Resources/3rd-Party/SGClient/build/SGClient.build/Release-iphoneos/SGClient.build/Objects-normal/armv7\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGMapKit/Resources/3rd-Party/SGClient/SGClient-v0.4.0/iphoneos\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGMapKit/Resources/3rd-Party/SGClient/SGClient-v0.4.0/iphonesimulator\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGMapKit/SGiPhoneSDK/SGClient/iphoneos\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGMapKit/SGiPhoneSDK/SGClient/iphonesimulator\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGMapKit/SGMapKit-v0.4.0/iphoneos\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGMapKit/SGMapKit-v0.4.0/iphonesimulator\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGClient/build/Debug-iphoneos\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGClient/build/Debug-iphonesimulator\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGClient/build/Release-iphoneos\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGClient/build/Release-iphonesimulator\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGClient/build/SGClient.build/Debug-iphoneos/SGClient.build/Objects-normal/armv6\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGClient/build/SGClient.build/Debug-iphoneos/SGClient.build/Objects-normal/armv7\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGClient/build/SGClient.build/Release-iphoneos/SGClient.build/Objects-normal/armv6\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGClient/build/SGClient.build/Release-iphoneos/SGClient.build/Objects-normal/armv7\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGClient/SGClient-v0.3.9/iphoneos\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGClient/SGClient-v0.3.9/iphonesimulator\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGClient/SGClient-v0.4.0/iphoneos\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGClient/SGClient-v0.4.0/iphonesimulator\"",
 					"\"$(SRCROOT)/SGiPhoneSDK/SGMapKit/iphonesimulator\"",
+					"\"$(SRCROOT)/SGiPhoneSDK/SGClient/iphonesimulator\"",
 				);
 				OTHER_LDFLAGS = (
 					"-all_load",
@@ -334,7 +384,7 @@
 					"-l",
 					SGMapKit,
 				);
-				PRODUCT_NAME = SGBorderCrossing;
+				PRODUCT_NAME = BorderXing;
 			};
 			name = Debug;
 		};
@@ -347,19 +397,44 @@
 				GCC_PREFIX_HEADER = Resources/SGBorderCrossing_Prefix.pch;
 				INFOPLIST_FILE = "Resources/SGBorderCrossing-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
-					"SGiPhoneSDK/SGClient/$(PLATFORM_NAME)",
-					"\"$(SRCROOT)/SGiPhoneSDK/SGClient/iphoneos\"",
-					"\"$(SRCROOT)/SGiPhoneSDK/SGClient/iphonesimulator\"",
-					"\"$(SRCROOT)/SGiPhoneSDK/SGMapKit/iphoneos\"",
+					"\"$(SRCROOT)/SGiPhoneSDK/SGClient/$(PLATFORM_NAME)\"",
+					"\"$(SRCROOT)/SGiPhoneSDK/SGMapKit/$(PLATFORM_NAME)\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGMapKit/build/Debug-iphonesimulator\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGMapKit/build/Release-iphonesimulator\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGMapKit/Resources/3rd-Party/SGClient/build/Release-iphoneos\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGMapKit/Resources/3rd-Party/SGClient/build/Release-iphonesimulator\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGMapKit/Resources/3rd-Party/SGClient/build/SGClient.build/Release-iphoneos/SGClient.build/Objects-normal/armv6\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGMapKit/Resources/3rd-Party/SGClient/build/SGClient.build/Release-iphoneos/SGClient.build/Objects-normal/armv7\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGMapKit/Resources/3rd-Party/SGClient/SGClient-v0.4.0/iphoneos\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGMapKit/Resources/3rd-Party/SGClient/SGClient-v0.4.0/iphonesimulator\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGMapKit/SGiPhoneSDK/SGClient/iphoneos\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGMapKit/SGiPhoneSDK/SGClient/iphonesimulator\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGMapKit/SGMapKit-v0.4.0/iphoneos\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGMapKit/SGMapKit-v0.4.0/iphonesimulator\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGClient/build/Debug-iphoneos\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGClient/build/Debug-iphonesimulator\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGClient/build/Release-iphoneos\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGClient/build/Release-iphonesimulator\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGClient/build/SGClient.build/Debug-iphoneos/SGClient.build/Objects-normal/armv6\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGClient/build/SGClient.build/Debug-iphoneos/SGClient.build/Objects-normal/armv7\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGClient/build/SGClient.build/Release-iphoneos/SGClient.build/Objects-normal/armv6\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGClient/build/SGClient.build/Release-iphoneos/SGClient.build/Objects-normal/armv7\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGClient/SGClient-v0.3.9/iphoneos\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGClient/SGClient-v0.3.9/iphonesimulator\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGClient/SGClient-v0.4.0/iphoneos\"",
+					"\"$(SRCROOT)/../../../clients/SGiPhoneSDK/SGClient/SGClient-v0.4.0/iphonesimulator\"",
 					"\"$(SRCROOT)/SGiPhoneSDK/SGMapKit/iphonesimulator\"",
+					"\"$(SRCROOT)/SGiPhoneSDK/SGClient/iphonesimulator\"",
 				);
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
 					"-l",
 					SGClient,
+					"-l",
+					SGMapKit,
 				);
-				PRODUCT_NAME = SGBorderCrossing;
+				PRODUCT_NAME = BorderXing;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

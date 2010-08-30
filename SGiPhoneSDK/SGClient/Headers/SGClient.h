@@ -24,3 +24,5 @@
 #import "SGLocationService.h"
 #import "SGLocationTypes.h"
 #import "SGOAuth.h"
+
+#import "SGLocationManager.h"

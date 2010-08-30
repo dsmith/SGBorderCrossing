@@ -9,6 +9,8 @@
 #import <CoreLocation/CoreLocation.h>
 #import "SGLocationService.h"
 
+@protocol SGLocationManagerDelegate;
+
 /*!
 * @class SGLocationManager 
 * @abstract A wrapper around the CLLocationManager that provides notifications when
@@ -20,7 +22,7 @@
     NSArray* regions;
 
     @private
-    BOOL conformsToSGDelegate;
+    id<SGLocationManagerDelegate> trueDelegate;
     NSString* regionResponseId;
 }
 

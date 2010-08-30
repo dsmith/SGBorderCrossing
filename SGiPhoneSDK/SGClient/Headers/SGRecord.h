@@ -137,7 +137,6 @@
 /*!
 * @property
 * @abstract The history of this record.
->>>>>>> mapview-abstraction
 */
 @property (nonatomic, retain) NSDictionary* history;
 
@@ -151,7 +150,6 @@
 /*!
 * @method updateHistory:
 * @abstract ￼Appends the new history with the current history.
->>>>>>> mapview-abstraction
 * @param newHistory ￼
 */
 - (void) updateHistory:(NSDictionary*)newHistory;
@@ -160,7 +158,6 @@
 * @method updateCoordinate:
 * @abstract ￼Updates the history and @link coordinate coordinate @/link while sending
 * a request an update to SimpleGeo.
->>>>>>> mapview-abstraction
 * @param coord ￼
 * @result ￼
 */
