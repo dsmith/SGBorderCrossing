@@ -38,9 +38,12 @@
     UIWindow *window;
     
     SGLocationManager* locationManager;
+    SGLocationService* locationService;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
+
+- (void) fireNotification:(NSString*)message;
 
 @end
 

@@ -35,6 +35,7 @@
 @interface SGMainViewController : UIViewController <SGLocationServiceDelegate> {
 
     SGRecordLine* recordOverlay;
+    SGDynamicPolylineView* polylineView;
 
     @private
     SGLayerMapView* mapView;

@@ -47,16 +47,18 @@ static BOOL updated = NO;
 
 - (id) initWithLayer:(NSString*)layerName
 {
-    if(self = [super init]) {
-        SGRecord* record = [[SGRecord alloc] init];
-        record.recordId = @"border-crossing-record";
-        record.layer = layerName;
-        recordOverlay = [[SGRecordLine alloc] initWithRecordAnnoation:record];
-        
+    if(self = [super init]) {        
         SGLocationService* locationService = [SGLocationService sharedLocationService];
-        [locationService addDelegate:self];
+        [locationService addDelegate:self];        
+
+        SGRecord* record = [[SGRecord alloc] init];
+        record.recordId = @"border-crossing-record-3";
+        record.layer = layerName;
         
-        historyQuery = [[SGHistoryQuery alloc] initWithRecord:recordOverlay.recordAnnotation];
+        recordOverlay = [[SGRecordLine alloc] initWithRecordAnnoation:record];
+        polylineView = nil;
+
+        historyQuery = [[SGHistoryQuery alloc] initWithRecord:record];
         historyQuery.limit = 100;
     }
     
@@ -89,8 +91,6 @@ static BOOL updated = NO;
                                                                                    action:@selector(refresh:)];
     self.navigationItem.rightBarButtonItem = refreshButton;
     [refreshButton release];
-    
-    [[SGLocationService sharedLocationService] history:historyQuery];
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -116,6 +116,9 @@ static BOOL updated = NO;
 
     recordOverlay = [[SGRecordLine alloc] initWithRecordAnnoation:record];
     [mapView addOverlay:recordOverlay];
+    
+    [[SGLocationService sharedLocationService] stopTrackingRecords];
+    [[SGLocationService sharedLocationService] startTrackingRecords];
 }
 
 - (void) locateMe:(id)button
@@ -144,7 +147,7 @@ static BOOL updated = NO;
      
 - (void) locationService:(SGLocationService*)service failedForResponseId:(NSString*)requestId error:(NSError*)error
 {
-    
+    ;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -155,26 +158,43 @@ static BOOL updated = NO;
 - (MKOverlayView*) mapView:(MKMapView*)mv viewForOverlay:(id<MKOverlay>)overlay
 {
     MKOverlayView* overlayView = nil;
-    if([overlay isKindOfClass:[SGRecordLine class]]) {
-        SGDynamicPolylineView* polylineView = [[SGDynamicPolylineView alloc] initWithOverlay:overlay];
-        polylineView.fillColor = [UIColor redColor];
-        polylineView.strokeColor = polylineView.fillColor;
-        overlayView = polylineView;
-    } else {
+    if([overlay isKindOfClass:[MKPolygon class]]) {
         MKPolygonView* polygonView = [[MKPolygonView alloc] initWithOverlay:overlay];
         polygonView.fillColor = [self randomColor];
         overlayView = polygonView;
     }
     
+    if([overlay isKindOfClass:[SGRecordLine class]]) {
+        polylineView = [[SGDynamicPolylineView alloc] initWithOverlay:overlay];
+        polylineView.fillColor = [UIColor redColor];
+        polylineView.strokeColor = polylineView.fillColor;
+        overlayView = polylineView;
+    }    
+        
     return overlayView;
 }
 
 - (void) mapView:(MKMapView*)mv didUpdateUserLocation:(MKUserLocation*)userLocation
-{
+{    
     if(!updated) {
         [mapView drawRegionsForLocation:userLocation.location types:nil];
+        
+        SGLocationService* locationService = [SGLocationService sharedLocationService];
+        [locationService history:historyQuery];
+        [locationService startTrackingRecords];          
+        
+        SGRecord* record = recordOverlay.recordAnnotation;
+        record.latitude = userLocation.coordinate.latitude;
+        record.longitude = userLocation.coordinate.longitude;
+        
         updated = YES;
-    }
+    } else
+        [((SGRecord*)recordOverlay.recordAnnotation) updateCoordinate:userLocation.coordinate];
+    
+    [recordOverlay reloadAnnotation];
+    if(polylineView)
+        [polylineView setNeedsDisplay];
+    
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////

@@ -59,15 +59,16 @@
     }   
     
     SGOAuth* oauthToken = [[SGOAuth alloc] initWithKey:key secret:secret];
-    SGLocationService* locationService = [SGLocationService sharedLocationService];
+    locationService = [SGLocationService sharedLocationService];
     locationService.HTTPAuthorizer = oauthToken;
-
-    SGMainViewController* mainViewController = [[SGMainViewController alloc] initWithLayer:layer];
-    locationService.trackRecords = [NSArray arrayWithObject:mainViewController.recordOverlay.recordAnnotation];
-    [locationService startTrackingRecords];
+    [locationService addDelegate:self];
     
     locationManager = [[SGLocationManager alloc] init];
     locationManager.delegate = self;
+    
+    SGMainViewController* mainViewController = [[SGMainViewController alloc] initWithLayer:layer];
+    locationService.trackRecords = [NSArray arrayWithObject:mainViewController.recordOverlay.recordAnnotation];
+    locationService.useGPS = YES;  
     
     UINavigationController* navigationController = [[UINavigationController alloc] initWithRootViewController:mainViewController];
     [window addSubview:navigationController.view];
@@ -76,26 +77,26 @@
 	return YES;
 }
 
-- (void) applicationDidEnterBackground:(UIApplication *)application 
+- (void) applicationDidEnterBackground:(UIApplication*)application 
 {
-    [[SGLocationService sharedLocationService] enterBackground];
     [locationManager startMonitoringSignificantLocationChanges];
+    [locationService enterBackground];
 }
 
 - (void) applicationWillEnterForeground:(UIApplication*)application 
 {
-    [[SGLocationService sharedLocationService] leaveBackground];
     [locationManager stopMonitoringSignificantLocationChanges];
+    [locationService leaveBackground];
 }
 
 - (void) applicationDidBecomeActive:(UIApplication*)application
 {
-    [[SGLocationService sharedLocationService] becameActive];
+    [locationService becameActive];
 }
 
 - (void) applicationWillTerminate:(UIApplication*)application 
 {
-    [[SGLocationService sharedLocationService] willBeTerminated];    
+    [locationService willBeTerminated];
 }
 
 - (void) application:(UIApplication*)application didReceiveLocalNotification:(UILocalNotification*)notification
@@ -116,17 +117,38 @@
 
 - (void) locationManager:(SGLocationManager*)locationManager didEnterRegions:(NSArray*)regions
 {
-    UILocalNotification* localNotification = [[UILocalNotification alloc] init];
-    localNotification.alertBody = [NSString stringWithFormat:@"Entered %i new regions", [regions count]];
-    localNotification.fireDate = nil;
-    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
-    [localNotification release];
+    [self fireNotification:[NSString stringWithFormat:@"Entered %i new regions", [regions count]]];
 }
 
 - (void) locationManager:(SGLocationManager*)locationManager didLeaveRegions:(NSArray*)regions
 {
+    [self fireNotification:[NSString stringWithFormat:@"Exited %i old regions", [regions count]]];
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+#pragma mark -
+#pragma mark Utility methods 
+//////////////////////////////////////////////////////////////////////////////////////////////// 
+
+- (BOOL) locationService:(SGLocationService*)service shouldCacheRecord:(id<SGRecordAnnotation>)record
+{
+    return NO;
+}
+
+- (void) locationService:(SGLocationService*)service failedForResponseId:(NSString*)requestId error:(NSError*)error
+{
+    ;   
+}
+
+- (void) locationService:(SGLocationService*)service succeededForResponseId:(NSString*)requestId responseObject:(NSObject*)responseObject
+{
+    ;
+}
+
+- (void) fireNotification:(NSString*)message
+{
     UILocalNotification* localNotification = [[UILocalNotification alloc] init];
-    localNotification.alertBody = [NSString stringWithFormat:@"Exited %i old regions", [regions count]];
+    localNotification.alertBody = message;
     localNotification.fireDate = nil;
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
     [localNotification release];    
